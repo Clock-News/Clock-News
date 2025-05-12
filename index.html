@@ -3,6 +3,7 @@
 <head>
   <title>SubWorld</title>
   <link rel="stylesheet" href="home style.css">
+	<button class="menu-toggle" aria-label="Toggle navigation">☰</button>
 </head>
 <body>
   <div class="header">
@@ -83,8 +84,9 @@
       <p>&copy; 2025 SubWorld News. All rights reserved.</p>
     </div>
   </div>
-</body>
-</html>
-  
+
+	document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav').classList.toggle('active');
+});
 </body>
 </html>
