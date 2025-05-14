@@ -1,0 +1,138 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Article content (left side) */
+.article-content {
+    flex: 1;
+    padding: 15px;
+    max-width: 800px; /* Optimal reading width */
+}
+
+/* Ad container (right side) */
+.ad-container {
+    width: 300px; /* Fixed ad width */
+    background: #f5f5f5;
+    padding: 15px;
+    border-left: 1px solid #ddd;
+}
+
+.ad-unit {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .ad-container {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ddd;
+        order: -1; /* Moves ads above content on mobile */
+    }
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 100%;
+}
+.news-article {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    margin-bottom: 0;
+	padding: 0;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.article-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.lead-image {
+    width: 100%;
+	margin: 0;
+}
+
+.image-caption {
+    font-size: 0.8em;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.article-body {
+    font-size: 1.1em;
+}
+
+footer {
+    margin-top: 0;
+    padding: 0;
+	border-top: none;
+}
+
+.tags {
+    margin-top: 20px;
+}
+
+.tag {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+blockquote {
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.related-articles {
+    margin-top: 30px;
+}
+
+.related-articles ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.related-articles li {
+    margin-bottom: 10px;
+}
