@@ -1,26 +1,80 @@
 <!doctype html>
 <html>
 <head>
-  <title>Subworldnews</title>
-  <link rel="stylesheet" href="home style.css">
+  <title>Subworld News</title>
+  <!-- This code is favicon starting point-->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
+<!--Meta Tags-->
+<!-- Primary Meta Tags -->
+<title>Subworld News</title>
+<meta name="title" content="Subworld News" />
+<meta name="description" content="Subworld News brings you the latest headlines, trending stories, and local voices from across South Asia and the world. Stay informed with balanced, timely, and reliable news updates." />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://subworldnews.netlify.app/" />
+<meta property="og:title" content="Subworld News" />
+<meta property="og:description" content="Subworld News brings you the latest headlines, trending stories, and local voices from across South Asia and the world. Stay informed with balanced, timely, and reliable news updates." />
+<meta property="og:image" content="https://subworldnews.netlify.app/subworld-cover.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://subworldnews.netlify.app/" />
+<meta property="twitter:title" content="Subworld News" />
+<meta property="twitter:description" content="Subworld News brings you the latest headlines, trending stories, and local voices from across South Asia and the world. Stay informed with balanced, timely, and reliable news updates." />
+<meta property="twitter:image" content="https://subworldnews.netlify.app/subworld-cover.png" />
+
+	
+	
+<!--Schema Markup-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "name": "Subworld News",
+  "alternateName": "Subworld",
+  "url": "https://subworldnews.netlify.app",
+  "logo": "https://subworldnews.netlify.app/subworld-logo.png",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61576479780082",
+    "https://www.youtube.com/@Subworldnews"
+  ]
+}
+</script>
+
+	
+<!-- CSS link -->
+<link rel="stylesheet" href="home style.css">
+
 </head>
 <body>
-  <div class="header">
-    <img src="subworld logo.png" class="logo" alt="SubWorldnews Logo">
-    <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="news.html">News</a>
-      <a href="About us.html">About us</a>
-      <a href="Contact us.html">Contact</a>
+<!-- Navbar & header -->
+<div class="header">
+  <img src="subworld-logo.png" class="logo" alt="SubWorld News Logo">
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="news.html" class="dropbtn">News</a>
+      <div class="dropdown-content">
+        <a href="science & technology.html">Science & Technology</a>
+        <a href="sport.html">Sport</a>
+        <a href="old news.html">Old News</a>
+      </div>
     </div>
+    <a href="about us.html">About us</a>
+    <a href="contact us.html">Contact</a>
   </div>
-
-<div class="article-preview">
+</div>
+<!-- in main wrapper (article preview & ad) are coming-->  
+  <div class="main-wrapper">
+<!-- in content column just (ad) coming-->
+    <div class="content-column">
+<!--Article Preview 1-->
+      <div class="article-preview">
         <div class="article-text">
           <h2><a href="Over 100 Killed in Gaza as Palestinians Mark 77 Years Since the Nakba.html">Over 100 Killed in Gaza as Palestinians Mark 77 Years Since the Nakba</a></h2> 
           <p>More than 100 Palestinians, including many women and children, were killed in new Israeli airstrikes across Gaza.</p>
@@ -28,12 +82,8 @@
         </div>
         <img src="gaza.jpg" alt="">
       </div>
-    </div>
-    
-	
-  <div class="main-wrapper">
-    <div class="content-column">
-      <div class="article-preview">
+<!--Article Preview 2-->
+	  <div class="article-preview">
         <div class="article-text">
           <h2><a href="Trump Begins His Second Term with Gulf Region Tour.html">Trump Begins His Second Term with Gulf Region Tour</a></h2>
           <p>President Donald Trump has started his first international trip of his second term by visiting three important countries in the Gulf region:</p>
@@ -41,64 +91,69 @@
         </div>
         <img src="dubai.jpg" alt="Trump’s First State Visit of Second Term: Middle East Tour">
       </div>
-      
+<!--Article Preview 3-->
       <div class="article-preview">
         <div class="article-text">
-          <h2><a href="#">#</a></h2> 
-          <p>#</p>
-          <p class="meta"><strong>Date:</strong>#</p>
+          <h2><a href=""></a></h2> 
+          <p></p>
+          <p class="meta"><strong>Date:</strong></p>
         </div>
-        <img src="#" alt="#">
+        <img src="" alt="">
       </div>
-    </div>
     
-    <div class="ad-column">
-      <div class="ad-container">
-        <div class="ad-placeholder">
-          AdSense Ad 300x250
-        </div>
-      </div>
-      <div class="ad-container">
-        <div class="ad-placeholder">
-          AdSense Ad 300x600
-        </div>
-      </div>
+    
+    
+    
+    
+    
+    
     </div>
-  </div>
+<!--Inline ad-->
+    <div class="inline-ad">
+  <div class="ad-placeholder">AD</div>
+</div>
   
   <div class="footer">
     <div class="footer-content">
       <div class="footer-section">
-        <h3>About SubWorld</h3>
+        <h3>About Subworld News</h3>
         <p>Local voices. Global perspective.</p>
 			<ul>
 				<li><a href="About us.html">About us</a> </li>
-				<li><a href="Disclaimer.html">Disclaimer</a> </li>
-				<li><a href="Editorial Policy.html">Editorial Policy</a> </li>
-				<li><a href="Cookie Policy.html">Coockie Policy</a> </li>
-				<li><a href="Advertising & Sponsored Content Policy.html">Advertising & Sponsored Content Policy</a> </li>
+				<li><a href="disclaimer.html">Disclaimer</a> </li>
+				<li><a href="terms & conditions.html">Terms & Conditions</a> </li>
 			</ul>
       </div>
       <div class="footer-section">
         <h3>Social Media</h3>
         <ul>
-          <li><a href="news.html">Umma</a></li>
-          <li><a href="News.html">Youtube</a></li>
-          <li><a href="news.html">facebook</a></li>
-          <li><a href="news.html">Instagram</a></li>
-          <li><a href="news.html">X</a></li>
+          <li><a href="https://www.youtube.com/@Subworldnews">YouTube</a></li>
+	  <li><a href="https://www.reddit.com/user/subworldnews/">Reddit</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61576479780082">Facebook</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h3>Contact Us</h3>
-        <p>Email: info@subworldnews.com</p>
-		<a href="Advertise With Us">Advertise with us</a>
-      </div>
+		<ul>
+		<li><a href="Advertise With Us">Advertise with us</a></li>
+      </ul>
+	  </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 SubWorld News. All rights reserved.</p>
+      <p>&copy; 2025 Subworld News. All rights reserved.</p>
     </div>
   </div>
+
+<div id="tracking"></div>
+
+<script>
+  fetch('/tracking.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('tracking').innerHTML = data;
+    });
+</script>
+
 
 </body>
 </html>
