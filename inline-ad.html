@@ -1,0 +1,7 @@
+<script>
+  fetch('/inline-ad.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('inline-ad-slot').innerHTML = data;
+    });
+</script>
