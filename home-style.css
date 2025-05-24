@@ -1,86 +1,133 @@
+/* ===== GLOBAL STYLES ===== */
+:root {
+  --primary: #4b4ff0;
+  --primary-hover: #3a3ed8;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Lora', 'Georgian', serif;
+  font-family: 'Lora', 'Georgia', serif;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 80px; /* Space for fixed navbar */
 }
 
-.nav a, .dropbtn, .footer {
-  font-family: 'Open Sans', sans-serif;
-}
-
-/* Header & Nav - Kept exactly as you had it */
+/* ===== NAVBAR ===== */
 .header {
   background-color: white;
-  padding: 0.5rem 0;
+  padding: 0 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  margin: 0;
+  box-shadow: var(--shadow-sm);
+  height: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.nav {
+.logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links {
   display: flex;
   gap: 1rem;
-  align-items: center;
+  list-style: none;
 }
 
-.nav a, .dropbtn {
-  color: #4b4ff0;
+.nav-link, .dropbtn {
+  color: var(--primary);
   text-decoration: none;
-  padding: 0.875rem 1.25rem;
-  border-radius: 0.3125rem;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  background: none;
-  border: none;
-  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: var(--transition);
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  position: relative;
 }
 
-.nav a:hover, 
+.nav-link:hover, 
 .dropdown:hover .dropbtn {
-  background-color: #4b4ff0;
-  color: white;
-  transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(75, 79, 240, 0.3);
+  background-color: var(--primary);
+  color: var(--text-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(75, 79, 240, 0.3);
 }
 
+/* ===== DROPDOWN ===== */
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
+  top: 100%;
+  left: 0;
   background: white;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 0.3125rem;
-  z-index: 1;
+  min-width: 220px;
+  box-shadow: var(--shadow-md);
+  border-radius: 0.5rem;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: var(--transition);
 }
 
 .dropdown-content a {
-  color: #333;
-  padding: 12px 16px;
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
   display: block;
-  transition: all 0.3s ease;
+  transition: var(--transition);
+  border-left: 3px solid transparent;
 }
 
 .dropdown-content a:hover {
-  background: #f0f0f0;
-  color: #222;
-  border-left: 3px solid #4b4ff0;
-  padding-left: 13px;
+  background: #f8f9ff;
+  color: var(--primary);
+  border-left-color: var(--primary);
+  padding-left: 1.5rem;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
-/* Main Layout - Kept exactly as you had it */
+/* ===== MENU TOGGLE FOR MOBILE ===== */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+/* ===== MAIN WRAPPER ===== */
 .main-wrapper {
   display: flex;
   max-width: 1200px;
@@ -103,7 +150,7 @@ body {
   top: 6rem;
 }
 
-/* Articles - Kept exactly as you had it */
+/* ===== ARTICLES ===== */
 .article-preview {
   display: flex;
   background: white;
@@ -146,10 +193,20 @@ body {
 .article-preview h2 a:hover {
   color: #003366;
   text-decoration: underline;
-  background: transparent;
-  padding: 0;
 }
 
+.article-preview p {
+  font-size: 0.9375rem;
+  color: #555;
+  margin-bottom: 0.625rem;
+}
+
+.meta {
+  font-size: 0.8125rem;
+  color: #777;
+}
+
+/* ===== SPONSORED LABEL ===== */
 .sponsored-label {
   background: #ff9800;
   color: white;
@@ -173,18 +230,7 @@ body {
   100% { transform: scale(1); }
 }
 
-.article-preview p {
-  font-size: 0.9375rem;
-  color: #555;
-  margin-bottom: 0.625rem;
-}
-
-.meta {
-  font-size: 0.8125rem;
-  color: #777;
-}
-
-/* Ads - Kept exactly as you had it */
+/* ===== ADS ===== */
 .inline-ad, .ad-container {
   background: #f8f9fa;
   border: 1px solid #ddd;
@@ -210,7 +256,7 @@ body {
   color: #666;
 }
 
-/* ===== FOOTER ONLY ===== */
+/* ===== FOOTER ===== */
 .footer {
   background: #1a1a2e;
   color: #ffffff;
@@ -219,18 +265,17 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* This centers everything horizontally */
+  align-items: center;
 }
 
 .footer-content {
   width: 100%;
-  max-width: 1200px; /* Same as your main content */
+  max-width: 1200px;
   padding: 0 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
-  box-sizing: border-box;
 }
 
 .footer-section {
@@ -273,7 +318,6 @@ body {
   margin-top: 2.5rem;
   background: #0f0f1a;
   font-size: 0.9rem;
-  box-sizing: border-box;
 }
 
 .footer-bottom p {
@@ -281,18 +325,7 @@ body {
   color: #aaaaaa;
 }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-  
-  .footer-section {
-    text-align: center;
-  }
-}
-
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   .main-wrapper {
     flex-direction: column;
@@ -312,12 +345,64 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    gap: 0.5rem;
+  body {
+    padding-top: 0;
   }
+  
+  .header {
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .nav-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav-link, .dropbtn {
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
   .dropdown-content {
     position: static;
+    width: 100%;
     box-shadow: none;
+    display: none;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+  
+  .menu-toggle {
+    display: block;
+    align-self: flex-end;
+  }
+  
+  .nav-active .nav-container {
+    max-height: 500px;
+    padding: 1rem 0;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .footer-section {
+    text-align: center;
   }
 }
