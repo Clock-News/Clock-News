@@ -39,13 +39,16 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.logo {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--primary);
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+logo {
+	height: 500px;
 }
+
+.logo img {
+  height: 500px; /* Adjust as needed */
+  width: auto;  /* Keeps aspect ratio */
+  display: block;
+}
+
 
 .nav-container {
   display: flex;
@@ -387,10 +390,6 @@ body {
     visibility: visible;
   }
   
-  .menu-toggle {
-    display: block;
-    align-self: flex-end;
-  }
   
   .nav-active .nav-container {
     max-height: 500px;
