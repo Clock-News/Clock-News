@@ -47,11 +47,7 @@ body {
 /* Updated Navigation Styles */
 
 .nav-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding: 0.5rem 1.25rem;
+  position: static;
 }
 
 .nav-links {
@@ -133,6 +129,7 @@ body {
   display: none;
   cursor: pointer;
   padding: 1rem;
+  font-size: 1.5rem;
 }
 
 /* ===== MAIN WRAPPER ===== */
@@ -353,8 +350,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    padding-top: 0;
+  .menu-toggle {
+	  display: block;
   }
   
   .header {
@@ -365,7 +362,6 @@ body {
   }
   
   .nav-container {
-    width: 100%;
     flex-direction: column;
     gap: 0;
     max-height: 0;
@@ -377,6 +373,7 @@ body {
     flex-direction: column;
     width: 100%;
   }
+}
   
   .nav-link, .dropbtn {
     width: 100%;
