@@ -46,6 +46,7 @@
 
   <!-- CSS link -->
   <link rel="stylesheet" href="home-style.css">
+	<link rel="stylesheet" href="home-responsive.css">
 <!--Font Style-->
 <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -151,43 +152,9 @@
       <p>&copy; 2025 Subworld News. All rights reserved.</p>
     </div>
   </footer>
-  
-<script>
-  const menuToggle = document.getElementById("menuToggle");
-  const header = document.querySelector(".header");
 
-  menuToggle.addEventListener("click", () => {
-    header.classList.toggle("nav-active");
-  });
-</script>
-
-<script>
-  // Enable tap-to-open for dropdowns on mobile
-  document.querySelectorAll('.nav li').forEach(item => {
-    item.addEventListener('click', function(e) {
-      // If it has a dropdown
-      if (this.querySelector('.dropdown')) {
-        e.stopPropagation(); // Prevent bubbling
-        e.preventDefault();  // Prevent default click
-
-        // Close all other dropdowns first
-        document.querySelectorAll('.nav li').forEach(li => {
-          if (li !== this) li.classList.remove('show');
-        });
-
-        // Toggle this dropdown
-        this.classList.toggle('show');
-      }
-    });
-  });
-
-  // Close dropdown if clicking outside
-  document.addEventListener('click', function () {
-    document.querySelectorAll('.nav li').forEach(item => {
-      item.classList.remove('show');
-    });
-  });
-</script>
+<!-- Link to external JS file -->
+  <script src="home-responsive.js"></script>
 	
 </body>
 </html>
