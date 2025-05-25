@@ -57,7 +57,11 @@
   <div class="logo">
     <img src="subworld-logo.png" alt="SubWorld News Logo" width="150">
   </div>
-  <nav class="nav-container">
+<!-- Mobile Menu Button -->
+<div class="menu-toggle" id="menuToggle">
+  ☰
+</div>
+	<nav class="nav-container">
     <ul class="nav-links">
       <li><a href="index.html" class="nav-link">Home</a></li>
       <li class="dropdown">
@@ -148,6 +152,15 @@
     </div>
   </footer>
   
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const header = document.querySelector(".header");
 
+  menuToggle.addEventListener("click", () => {
+    header.classList.toggle("nav-active");
+  });
+</script>
+
+	
 </body>
 </html>
