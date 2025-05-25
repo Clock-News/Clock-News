@@ -161,6 +161,33 @@
   });
 </script>
 
+<script>
+  // Enable tap-to-open for dropdowns on mobile
+  document.querySelectorAll('.nav li').forEach(item => {
+    item.addEventListener('click', function(e) {
+      // If it has a dropdown
+      if (this.querySelector('.dropdown')) {
+        e.stopPropagation(); // Prevent bubbling
+        e.preventDefault();  // Prevent default click
+
+        // Close all other dropdowns first
+        document.querySelectorAll('.nav li').forEach(li => {
+          if (li !== this) li.classList.remove('show');
+        });
+
+        // Toggle this dropdown
+        this.classList.toggle('show');
+      }
+    });
+  });
+
+  // Close dropdown if clicking outside
+  document.addEventListener('click', function () {
+    document.querySelectorAll('.nav li').forEach(item => {
+      item.classList.remove('show');
+    });
+  });
+</script>
 	
 </body>
 </html>
