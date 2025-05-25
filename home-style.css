@@ -381,6 +381,18 @@ body {
     border-radius: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
+
+.nav .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav li:hover > .dropdown,
+.nav li.show > .dropdown {
+  display: block;
+}
   
   .dropdown-content {
     position: static;
