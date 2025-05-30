@@ -133,23 +133,26 @@ body {
 
 /* ===== MAIN WRAPPER ===== */
 .main-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 1.25rem;
-  gap: 2rem;
 }
 
 .content-column {
-  flex: 2;
+  grid-column: 1;
+  display: grid;
+  gap: 1.5rem;
+  align-content: start;
 }
 
 .sidebar-column {
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
+  grid-column: 2;
+  display: grid;
   gap: 1.5rem;
+  align-content: start;
   position: sticky;
   top: 6rem;
 }
