@@ -36,15 +36,52 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "SubWorld News",
-  "url": "https://subworldnews.netlify.app",
-  "logo": "https://subworldnews.netlify.app/subworld-news-logo.png",
-  "description": "SubWorld News is an independent digital news platform that delivers curated and clearly written news from trusted global sources. With a commitment to transparency, accuracy, and simplicity, we bring local voices into global conversations — making news accessible to everyone, everywhere.",
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61576479780082",
-    "https://www.reddit.com/user/subworldnews/",
-    "https://www.youtube.com/@Subworldnews"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://clocknews.netlify.app/#organization",
+      "name": "Clock News",
+      "url": "https://clocknews.netlify.app",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://clocknews.netlify.app/clocknews-logo.png"
+      },
+      "email": "subworldnews@proton.me",
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "PK"
+        }
+      },
+      "sameAs": [
+        "https://facebook.com/clocknews", 
+        "https://twitter.com/clocknews", 
+        "https://instagram.com/clocknews", 
+        "https://youtube.com/@clocknews"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://clocknews.netlify.app/#website",
+      "url": "https://clocknews.netlify.app",
+      "name": "Clock News",
+      "publisher": {
+        "@id": "https://clocknews.netlify.app/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://clocknews.netlify.app/#webpage",
+      "url": "https://clocknews.netlify.app",
+      "name": "Clock News - Global Digital News Publisher",
+      "isPartOf": {
+        "@id": "https://clocknews.netlify.app/#website"
+      },
+      "about": {
+        "@id": "https://clocknews.netlify.app/#organization"
+      }
+    }
   ]
 }
 </script>
