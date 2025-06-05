@@ -61,12 +61,15 @@
 /* HIDE nav-links by default on mobile */
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #fff;
-    border-top: 1px solid #ddd;
-  }
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 70px; /* Below the header */
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
 
   .nav-links.active {
     display: flex;
