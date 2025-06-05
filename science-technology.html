@@ -63,18 +63,73 @@
 	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "SubWorld News",
-  "url": "https://subworldnews.netlify.app",
-  "logo": "https://subworldnews.netlify.app/subworld-news-logo.png",
-  "description": "SubWorld News is an independent digital news platform that delivers curated and clearly written news from trusted global sources. With a commitment to transparency, accuracy, and simplicity, we bring local voices into global conversations — making news accessible to everyone, everywhere.",
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61576479780082",
-    "https://www.reddit.com/user/subworldnews/",
-    "https://www.youtube.com/@Subworldnews"
+  "@graph": [
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": "https://clocknews.netlify.app/#organization",
+      "name": "Clock News",
+      "url": "https://clocknews.netlify.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://clocknews.netlify.app/clock-news-logo.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "subworldnews@proton.me",
+        "contactType": "Customer Support"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61576479780082",
+        "https://www.youtube.com/@Clocknews-Sub",
+        "https://www.reddit.com/user/subworldnews/",
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://clocknews.netlify.app/science-technology",
+      "url": "https://clocknews.netlify.app/science-technology",
+      "name": "Latest Science & Technology News from Trusted Sources | Clock News",
+      "description": "Stay updated with daily science and technology news from trusted global sources on Clock News.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://clocknews.netlify.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://clocknews.netlify.app/science-technology#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://clocknews.netlify.app/science-technology#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://clocknews.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Science & Technology",
+          "item": "https://clocknews.netlify.app/science-technology"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://clocknews.netlify.app/#website",
+      "url": "https://clocknews.netlify.app/",
+      "name": "Clock News",
+      "publisher": {
+        "@id": "https://clocknews.netlify.app/#organization"
+      },
+      "inLanguage": "en"
+    }
   ]
 }
 </script>
+
 
 	
 	<!--CSS link-->
