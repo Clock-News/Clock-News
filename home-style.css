@@ -125,10 +125,13 @@ body {
 
 /* ===== MENU TOGGLE FOR MOBILE ===== */
 .menu-toggle {
-  display: none;
+  position: absolute;
+  right: 1.5rem; /* distance from the right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
   cursor: pointer;
-  padding: 1rem;
-  font-size: 1.5rem;
+  z-index: 2000;
 }
 
 /* ===== MAIN WRAPPER ===== */
