@@ -58,6 +58,26 @@
   }
 }
 
+/* HIDE nav-links by default on mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
 /* For small mobile screens */
 @media (max-width: 480px) {
   .header img {
