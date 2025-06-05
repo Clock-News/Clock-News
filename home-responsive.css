@@ -1,1 +1,85 @@
+/* === RESPONSIVE DESIGN FOR TABLET AND MOBILE === */
 
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .dropdown-content a {
+    background: white;
+    border-bottom: 1px solid #eee;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* MAIN WRAPPER → Stack Columns */
+  .main-wrapper {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .sidebar-column {
+    position: static;
+  }
+
+  /* ARTICLE IMAGE RESIZE */
+  .article-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-preview img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+  .header img {
+    height: 50px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-section {
+    min-width: unset;
+    text-align: center;
+  }
+}
