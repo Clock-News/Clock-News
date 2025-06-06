@@ -1,19 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+const openIcon = document.getElementById('openIcon');
+const closeIcon = document.getElementById('closeIcon');
 
-  menuToggle.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  const isActive = navLinks.classList.contains('active');
 
-  // Toggle dropdowns in mobile menu
-  const dropdowns = navLinks.querySelectorAll(".dropdown > .dropbtn");
-
-  dropdowns.forEach(dropbtn => {
-    dropbtn.addEventListener("click", function (e) {
-      e.preventDefault(); // prevent link default
-      const dropdownParent = this.parentElement;
-      dropdownParent.classList.toggle("active");
-    });
-  });
+  openIcon.style.display = isActive ? 'none' : 'block';
+  closeIcon.style.display = isActive ? 'block' : 'none';
 });
