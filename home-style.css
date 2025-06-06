@@ -123,16 +123,42 @@ body {
   display: block;
 }
 
+/* Hide by default */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  
+  /* Position fixed on right */
+  position: fixed;
+  top: 60px;       /* adjust based on your header height */
+  right: 0;
+  height: 100vh;
+  width: 250px;    /* menu width */
+  padding: 1rem;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  z-index: 9999;
+
+  /* For smooth slide in */
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+/* When active, slide in */
+.nav-links.active {
+  display: flex;
+  transform: translateX(0);
+}
+
+
 /* ===== MENU TOGGLE FOR MOBILE ===== */
 .menu-toggle {
-  display: block; /* Make sure it’s visible on mobile */
   cursor: pointer;
   font-size: 1.8rem;
   padding: 1rem;
-  /* Position it on the right */
-  margin-left: auto;
+  margin-left: auto; /* pushes it right */
+  z-index: 10000;    /* keep on top */
 }
-
 /* ===== MAIN WRAPPER ===== */
 .main-wrapper {
   display: grid;
