@@ -159,6 +159,23 @@ body {
   margin-left: auto; /* pushes it right */
   z-index: 10000;    /* keep on top */
 }
+
+/* Dropdown content inside nav-links on mobile */
+.nav-links .dropdown-content {
+  position: relative; /* override absolute */
+  box-shadow: none;
+  background: #f9f9f9;
+  padding-left: 1rem;
+  display: none; /* hide by default */
+  margin-top: 0.5rem;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Show dropdown content when parent dropdown is active */
+.nav-links .dropdown.active .dropdown-content {
+  display: block;
+}
+
 /* ===== MAIN WRAPPER ===== */
 .main-wrapper {
   display: grid;
