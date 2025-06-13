@@ -365,21 +365,40 @@
   }
 
   /* ----------------------- Responsive Design ----------------------- */
-  @media (max-width: 768px) {
+  /* Default: landscape layout */
+.article-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+/* Adjust image and text sizing for normal desktop */
+.article-image {
+  flex: 0 0 300px;
+  max-width: 300px;
+}
+
+.article-text {
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+	
+/* For very small screens (below 500px), switch to stacked layout */
+@media (max-width: 500px) {
   .article-container {
-    flex-direction: row; /* Keep it landscape */
-    flex-wrap: nowrap;   /* Optional: prevents wrap */
-    align-items: flex-start;
+    flex-direction: column;
   }
 
-  .article-image {
-    max-width: 300px;
-    flex: 0 0 300px;
-  }
-
+  .article-image,
   .article-text {
-    flex: 1 1 300px;
     max-width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .article-image img {
+    height: auto;
+    max-height: 200px;
   }
 }
 
