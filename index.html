@@ -407,12 +407,13 @@
       flex: 1 1 auto;
     }
 
-    .footer-content {
-      flex-direction: column;
-      gap: 20px;
-      text-align: center;
-    }
-
+    @media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
     .main-nav {
       gap: 10px;
       flex-wrap: wrap;
