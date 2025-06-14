@@ -184,6 +184,21 @@
     color: #023020;
   }
 
+/* ----------------------- Banner ----------------------- */
+
+.panoramic-banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.panoramic-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 600px;
+  object-fit: cover;
+}
+	
   /* ----------------------- Slide-out Side Menu ----------------------- */
   .side-menu {
     position: fixed;
@@ -439,6 +454,12 @@
     </nav>
   </header>
 
+<!--Banner-->
+
+<div class="panoramic-banner">
+  <img src="clock-news-world-banner.png" alt="Clock News Banner">
+</div>
+	
   <!-- Slide-out Menu -->
   <div class="side-menu" id="sideMenu">
     <button class="close-btn" id="closeMenu" aria-label="Close Menu">&times;</button>
