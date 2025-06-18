@@ -425,6 +425,21 @@
   flex: 1 1 auto;
   max-width: 100%;
 }
+
+@media (min-width: 1024px) {
+  .article-image {
+    flex: 0 0 250px !important;
+    max-width: 300px !important;
+  }
+
+  .article-image img {
+    height: 160px !important;
+  }
+
+  .article-text {
+    max-width: calc(100% - 420px) !important;
+  }
+}
 	
 /* For very small screens (below 500px), switch to stacked layout */
 @media (max-width: 768px) {
