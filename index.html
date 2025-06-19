@@ -736,12 +736,15 @@
     });
   });
   
-  function clearContinentFilters() {
-  const checkboxes = document.querySelectorAll('.continent-checkbox');
-  checkboxes.forEach(cb => cb.checked = false);
-  applyContinentFilters(); // reapply to show all articles
-}
+function clearContinentFilters() {
+    const checkboxes = document.querySelectorAll('.continent-checkbox');
+    checkboxes.forEach(cb => cb.checked = false);
 
+    const articles = document.querySelectorAll('.article-container');
+    articles.forEach(article => {
+      article.style.display = 'flex'; // ✅ Reset visibility
+    });
+  }
 </script>
 
 </body>
