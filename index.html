@@ -622,15 +622,20 @@ figcaption {
   }
 
 @media (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
   .main-nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+    gap: 4px;
   }
 
-  .main-nav a {
+  .main-nav .nav-link {
     align-self: flex-start;
   }
 
@@ -638,6 +643,7 @@ figcaption {
     align-self: flex-end;
   }
 }
+
 
 	
 </style>
