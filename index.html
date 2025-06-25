@@ -120,7 +120,33 @@
 
 	
 <style>
-  /* ----------------------- Global Styles ----------------------- */
+ 
+	/* ----------------------- Font Faces (Assuming Local Fonts) ----------------------- */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat.bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Petrona';
+  src: url('fonts/petrona.regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Nimbus Roman No9 L';
+  src: url('fonts/NimbusRomNo9L-Reg.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+	
+	/* ----------------------- Global Styles ----------------------- */
   * {
     box-sizing: border-box;
   }
@@ -134,6 +160,45 @@
     color: #1c1c1c;
   }
 
+/* Global Text (default for paragraphs) */
+body,
+p,
+.article-summary,
+.article-text p {
+  font-family: 'Petrona', serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1c1c1c;
+}
+
+/* Headings & Article Titles */
+h1, h2, h3, h4, h5, h6,
+.article-text h2,
+.article-text h2 a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation: Navbar, Sidemenu, Footer Links */
+.navbar,
+.navbar a,
+.nav-link,
+.side-menu,
+.side-menu a,
+footer a,
+footer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Captions ONLY (image captions, figcaption, reports) */
+.caption,
+figcaption {
+  font-family: 'Nimbus Roman No9 L', serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  font-style: italic;
+}
+	
   a {
     color: #023020;
     text-decoration: none;
