@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Clock News</title>
+<style>
+/* ----------------------- Global Styles ----------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Cambria, serif; /* Content paragraphs */
+  font-size: 19px;
+  line-height: 1.7;
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+
+/* Content Container */
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ol, ul {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #023020;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2.5px;
+  background-color: #023020;
+  transition: width 0.4s ease;
+}
+
+a:hover::after {
+  width: 100%;
+  background-color: #6495ED;
+}
+
+/* ----------------------- Navbar ----------------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-bottom: 3px solid #F5F5F5;
+  font-family: Arial, sans-serif; /* Navbar font */
+}
+
+.logo img {
+  height: 50px;
+  width: 160px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #023020;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #F5F5DC;
+  color: #023020;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #023020;
+}
+
+/* ----------------------- Side Menu ----------------------- */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -3px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1100;
+  font-family: 'Inter', sans-serif;
+}
+
+.side-menu a {
+  display: block;
+  width: 100%;
+  color: #023020;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 2.5px solid #FAEBD7;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.side-menu a:hover {
+  background-color: #dff0e0;
+  color: #023020;
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #023020;
+  margin-bottom: 20px;
+}
+
+/* ----------------------- Footer ----------------------- */
+footer {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 40px 20px 20px 20px;
+  border-top: 1px solid #ddd;
+  font-family: 'Inter', sans-serif; /* Footer content font */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+/* Footer Headings */
+.footer-section h3 {
+  font-family: Arial, sans-serif; /* Footer heading */
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section a {
+  line-height: 2.5;  /* Increased line height for content */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #777;
+}
+
+footer a {
+  color: #023020;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #005a2b;
+}
+</style>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="clock-news-logo.png" alt="Clock News Logo">
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">&#9776;</button>
+    </nav>
+  </header>
+  
+  <!-- Slide-out Menu -->
+  <div class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close Menu">&times;</button>
+    <a href="science-and-technology.html">Science & Technology</a>
+    <a href="sports.html">Sports</a>
+    <a href="old-news.html">Old News</a>
+  </div>
+
+<div class="container">
+    <h1>Disclaimer</h1>
+    <p>
+      Clock News aggregates and curates news from third-party sources, including Dawn, Al Jazeera, BBC, Reuters, and other reputable outlets. We do not produce original reporting and do not claim ownership of the sourced content. However, we retain ownership of the layout, formatting, and presentation of content on this website. We don’t own the news, but we own the way we show it.
+    </p>
+
+    <h2>Key Terms:</h2>
+    <ol>
+      <li><strong>Clock News:</strong> Clock News refers to the digital news platform, which curates and presents news content from trusted external sources. It is operated as an independent aggregator under Pakistani law, with content intended for a global audience.</li>
+      <li><strong>Third-Party Sources:</strong> These are reputable news outlets such as Dawn, BBC, Al Jazeera, Reuters, and others from which Clock News gathers publicly available news for display. Clock News is not affiliated with these sources in any official capacity.</li>
+      <li><strong>Aggregated Content:</strong> Refers to summaries, headlines, direct quotes, or brief excerpts from Third-Party Sources shared for informational purposes only. This content is selected without modification to the original meaning.</li>
+      <li><strong>Original Reporting:</strong> Clock News does not conduct independent journalism or investigative reporting. All content shown is based on existing coverage from established media sources.</li>
+      <li><strong>Content Ownership:</strong> While Clock News does not claim ownership of the news it aggregates, it does retain full ownership of its site layout, formatting, visual presentation, and any editorial commentary or summaries it creates.</li>
+      <li><strong>Copyright:</strong> All copyrights and intellectual property rights for the original news content belong to the respective Third-Party Sources. Clock News does not assert or imply any copyright ownership over such materials.</li>
+      <li><strong>Fair Use Disclaimer:</strong> Content presented on Clock News is used under the principle of fair use, intended for commentary, reporting, and public awareness without commercial reproduction or distribution of the original material.</li>
+      <li><strong>No Affiliation:</strong> Clock News is not endorsed by, affiliated with, or sponsored by any Third-Party Source mentioned on the website. All trademarks and copyrights remain the property of their respective owners.</li>
+      <li><strong>Presentation Rights:</strong> Clock News reserves the right to organize and display content in a way that aligns with its editorial style, branding, and user interface design, without altering the original context of sourced material.</li>
+      <li><strong>Limitation of Liability:</strong> Clock News makes no warranties regarding the accuracy, completeness, or timeliness of the content it displays. We are not liable for any loss, harm, or misunderstanding resulting from the use of this website.</li>
+      <li><strong>External Links:</strong> Clock News may include hyperlinks to external websites. We are not responsible for the content, reliability, or practices of any third-party sites accessed through such links.</li>
+      <li><strong>Changes to Disclaimer:</strong> Clock News may revise this Disclaimer at any time. Continued use of the site constitutes acceptance of the most recent version.</li>
+      <li><strong>Monetization & Sponsored Content:</strong> Clock News may earn revenue through advertisements and sponsored posts. Sponsored content will be clearly marked when applicable. However, sponsorship does not influence the curation or integrity of the news presented.</li>
+    </ol>
+
+    <h2>Sources & Credits</h2>
+    <p>
+      At Clock News, we believe in the importance of credible and diverse journalism. To ensure our readers receive accurate, well-rounded, and up-to-date information, we source content from a select group of trusted international and Asian news organizations. These sources are recognized globally for their journalistic integrity and editorial standards.
+    </p>
+
+    <p><strong>Our current list of sources includes:</strong></p>
+    <ul>
+      <li>BBC News – United Kingdom</li>
+      <li>Al Jazeera English – Qatar</li>
+      <li>Reuters – Global</li>
+      <li>Dawn – Pakistan</li>
+      <li>The Hindu – India</li>
+      <li>The Daily Star – Bangladesh</li>
+      <li>The Kathmandu Post – Nepal</li>
+      <li>The Japan Times – Japan</li>
+      <li>The Straits Times – Singapore</li>
+      <li>South China Morning Post (SCMP) – Hong Kong</li>
+      <li>Nature News – United Kingdom</li>
+      <li>Muslim News – United Kingdom</li>
+    </ul>
+
+    <p>
+      We acknowledge and credit these organizations for their valuable reporting and contributions to public knowledge. All third-party content is curated and presented with full respect to original authorship and in line with fair use practices for news aggregation.
+    </p>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><strong>About Clock News</strong></h3>
+        <p><a href="about.html" target="_blank">About</a></p>
+        <p><a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a></p>
+        <p><a href="disclaimer.html" target="_blank">Disclaimer</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3><strong>Contact Info</strong></h3>
+        <p><a href="contact.html" target="_blank">Contact Clock News</a></p>
+        <p><a href="advertise.html" target="_blank">Advertise with Clock News</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3><strong>Social Media</strong></h3>
+        <p><a href="https://www.youtube.com/@Clocknews-Sub" target="_blank">YouTube</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=61576479780082" target="_blank">Facebook</a></p>
+        <p><a href="https://www.reddit.com/user/subworldnews/" target="_blank">Reddit</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Clock News. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript for Slide-out Menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const closeMenu = document.getElementById('closeMenu');
+    const sideMenu = document.getElementById('sideMenu');
+
+    menuToggle.addEventListener('click', () => {
+      sideMenu.style.right = '0';
+    });
+
+    closeMenu.addEventListener('click', () => {
+      sideMenu.style.right = '-260px';
+    });
+
+    window.addEventListener('click', function (e) {
+  if (!sideMenu.contains(e.target) && e.target !== menuToggle) {
+    sideMenu.style.right = '-260px';
+  }
+});
+  </script>
+  </body>
+  </html>
