@@ -1,53 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>The Undertime | Sports</title>
 
+<!--Favicon-->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+
+
+<!--Cookies-->
+<link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
+<script src="silktide-consent-manager.js"></script>
+<script>
+silktideCookieBannerManager.updateCookieBannerConfig({
+  background: {
+    showBackground: false
+  },
+  cookieIcon: {
+    position: "bottomLeft"
+  },
+  cookieTypes: [
+    {
+      id: "clock_cookie",
+      name: "Clock Cookie ",
+      description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+      required: true,
+      onAccept: function() {
+        console.log('Add logic for the required Clock Cookie  here');
+      }
+    },
+    {
+      id: "analytical",
+      name: "Analytical",
+      description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+      required: true,
+      onAccept: function() {
+        console.log('Add logic for the required Analytical here');
+      }
+    },
+    {
+      id: "advertising",
+      name: "Advertising",
+      description: "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
+      required: true,
+      onAccept: function() {
+        console.log('Add logic for the required Advertising here');
+      }
+    }
+  ],
+  text: {
+    banner: {
+      description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+      acceptAllButtonText: "Accept all",
+      acceptAllButtonAccessibleLabel: "Accept all cookies",
+      rejectNonEssentialButtonText: "Reject non-essential",
+      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+      preferencesButtonText: "Preferences",
+      preferencesButtonAccessibleLabel: "Toggle preferences"
+    },
+    preferences: {
+      title: "Customize your cookie preferences",
+      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+      creditLinkText: "Get this banner for free",
+      creditLinkAccessibleLabel: "Get this banner for free"
+    }
+  },
+  position: {
+    banner: "bottomCenter"
+  }
+});
+</script>
 	
 <!--meta tags-->
 <!-- ====== SEO Tags ====== -->
-<title>Clock News | Sports</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="title" content="Clock News | Sports">
-<meta name="description" content="Clock News delivers the latest in science and technology — from AI and space discoveries to health, climate, and the innovations driving tomorrow’s world.">
-<meta name="keywords" content="science news, technology news, global updates, AI news, space discoveries, tech trends, Clock News, science and tech Pakistan, digital innovation">
+<meta name="title" content="Sports | The Undertime">
+<meta name="description" content="From legendary player stories to unforgettable moments in sports history — dive into articles that bring the world of sports to life, one story at a time.">
 <meta name="robots" content="index, follow">
-
+<meta name="author" content="The Undertime">
+<meta name="language" content="en">
 
 <!-- ====== Canonical URL ====== -->
-<link rel="canonical" href="https://clocknews.netlify.app/science-and-technology">
+<link rel="canonical" href="https://the-undertime.netlify.app/sports">
 
 <!-- ====== Open Graph / Facebook ====== -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://clocknews.netlify.app/science-and-technology">
-<meta property="og:title" content="Clock News | Science & Technology">
-<meta property="og:description" content="Clock News delivers the latest in science and technology — from AI and space discoveries to health, climate, and the innovations driving tomorrow’s world.">
-<meta property="og:image" content="https://clocknews.netlify.app/clock-news-cover.png">
-<meta property="og:site_name" content="Clock News">
+<meta property="og:url" content="https://the-undertime.netlify.app/sports">
+<meta property="og:title" content="Sports | The Undertime">
+<meta property="og:description" content="Explore inspiring player stories, iconic sports moments, and rich history from across the world of sports — one powerful article at a time.">
+<meta property="og:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
+<meta property="og:site_name" content="The Undertime">
+<meta property="og:locale" content="en_US">
 
-<!-- ====== Twitter Card (Fallback) ====== -->
+<!--Twitter Card-->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clock News | Science & Technology">
-<meta name="twitter:description" content="Clock News delivers the latest in science and technology — from AI and space discoveries to health, climate, and the innovations driving tomorrow’s world.">
-<meta name="twitter:image" content="https://clocknews.netlify.app/clock-news-cover.png">
+<meta name="twitter:url" content="https://the-undertime.netlify.app/sports">
+<meta name="twitter:title" content="Sports | The Undertime">
+<meta name="twitter:description" content="Get into the game with real stories — from legendary players to unforgettable sports history. Articles that make you feel the moment.">
+<meta name="twitter:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
+	
+<!-- ====== Site Verification Placeholders ====== -->
+<meta name="google-site-verification" content="50uo9QYBNQpqKqfs9k2JSv6veTnDd7xm8Ew7MnmRQYU" />
+<meta name="msvalidate.01" content="PLACEHOLDER_BING_CODE">
+<meta name="p:domain_verify" content="PLACEHOLDER_PINTEREST_CODE">
 
 <!-- ====== PWA / App-Like Behavior ====== -->
-<link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#1a73e8">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Clock News">
+<meta name="apple-mobile-web-app-title" content="U Sports">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
-
-<!-- ====== Site Verification Placeholders ====== -->
-<meta name="google-site-verification" content="PLACEHOLDER_GOOGLE_CODE">
-<meta name="msvalidate.01" content="PLACEHOLDER_BING_CODE">
-<meta name="p:domain_verify" content="PLACEHOLDER_PINTEREST_CODE">
 
 <!-- ====== Social Profiles ====== -->
 <meta property="og:profile" content="https://www.facebook.com/profile.php?id=61576479780082">
@@ -55,63 +120,91 @@
 <link rel="me" href="https://www.youtube.com/@Clocknews-Sub">
 
 <!-- ====== Dublin Core Metadata ====== -->
-<meta name="DC.title" content="Clock News">
-<meta name="DC.creator" content="Clock News">
-<meta name="DC.publisher" content="Clock News">
+<meta name="DC.title" content="Sports | The Undertime">
+<meta name="DC.creator" content="The Undertime">
+<meta name="DC.publisher" content="The Undertime">
 <meta name="DC.language" content="en">
-<meta name="DC.description" content="Clock News delivers the latest in science and technology — from AI and space discoveries to health, climate, and the innovations driving tomorrow’s world.">
+<meta name="DC.description" content="A global collection of engaging sports articles featuring player stories, historic moments, and the spirit of sports through time.">
 <meta name="DC.date" content="2025-07-01">
-
-
 
 <!--Schema markup-->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://clocknews.netlify.app/science-and-technology",
-  "url": "https://clocknews.netlify.app/science-and-technology",
-  "name": "Clock News | Science & Technology",
-  "description": "Clock News delivers the latest in science and technology — from AI and space discoveries to health, climate, and the innovations driving tomorrow’s world.",
-  "inLanguage": "en",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "Clock News",
-    "url": "https://clocknews.netlify.app"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Clock News",
-    "url": "https://clocknews.netlify.app",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://clocknews.netlify.app/clock-news-logo.png"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "subworldnews@proton.me",
-      "contactType": "customer support"
-    },
-    "sameAs": [
-      "https://www.youtube.com/@Clocknews-Sub",
-      "https://www.reddit.com/user/subworldnews/",
-      "https://www.facebook.com/profile.php?id=61576479780082"
-    ]
-  },
-  "mainEntity": {
-    "@type": "CollectionPage",
-    "name": "Science & Technology Articles",
-    "hasPart": {
-      "@type": "ItemList",
-      "name": "Article Previews",
-      "itemListOrder": "http://schema.org/ItemListUnordered",
-      "numberOfItems": 10
-    }
+  "@type": "EducationalOrganization",
+  "name": "The Undertime",
+  "url": "https://the-undertime.netlify.app/sports",
+  "logo": {
+  "@type": "ImageObject",
+  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
+},
+  "sameAs": [
+    "https://www.facebook.com/your-username",
+    "https://www.youtube.com/@yourchannel",
+    "https://www.reddit.com/user/yourusername"
+  ],
+  "description": "Explore the powerful sports stories from around the world — featuring inspiring player journeys, iconic moments, and rich sports history in every article.",
+  "foundingDate": "2025-07-01",
+  "email": "subworldnews@proton.me",
+  "address": {
+    "addressCountry": "Pakistan"
   }
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "The Undertime -  Explore the sports",
+  "url": "https://the-undertime.netlify.app/sports",
+  "isPartOf": {
+    "@type": "EducationalOrganization",
+    "name": "The Undertime"
+  },
+  "description": "Explore the powerful sports stories from around the world — featuring inspiring player journeys, iconic moments, and rich sports history in every article.",
+  "inLanguage": "en",
+ "primaryImageOfPage": {
+  "@type": "ImageObject",
+  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
+},
+  "datePublished": "2025-07-01",
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": "https://the-undertime.netlify.app"
+  }
+}
+</script>
+
+
+
+	
 <style>
+/* ----------------------- Font Faces (Assuming Local Fonts) ----------------------- */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat.bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Petrona';
+  src: url('fonts/petrona.regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Nimbus Roman No9 L';
+  src: url('fonts/NimbusRomNo9L-Reg.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
   /* ----------------------- Global Styles ----------------------- */
   * {
     box-sizing: border-box;
@@ -119,12 +212,51 @@
 
   body {
     margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Petrona', serif;
     font-size: 17px;
     line-height: 1.6;
     background-color: #ffffff;
     color: #1c1c1c;
   }
+
+/* Global Text (default for paragraphs) */
+body,
+p,
+.article-summary,
+.article-text p {
+  font-family: 'Petrona', serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1c1c1c;
+}
+
+/* Headings & Article Titles */
+h1, h2, h3, h4, h5, h6,
+.article-text h2,
+.article-text h2 a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation: Navbar, Sidemenu, Footer Links */
+.navbar,
+.navbar a,
+.nav-link,
+.side-menu,
+.side-menu a,
+footer a,
+footer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Captions ONLY (image captions, figcaption, reports) */
+.caption,
+figcaption {
+  font-family: 'Nimbus Roman No9 L', serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  font-style: italic;
+}
 
   a {
     color: #023020;
@@ -433,7 +565,8 @@
 }
 
 #filters {
-  position: relative; /* Enables absolute positioning inside */
+  position: relative;
+  margin-top: 10px;
 }
 
 #sportsDropdown {
@@ -449,11 +582,6 @@
   z-index: 1000;
   width: 180px;
 }
-
-#filters {
-  margin-top: 10px;
-}
-
 
   /* ----------------------- Responsive Design ----------------------- */
   /* Default: landscape layout */
@@ -546,7 +674,6 @@
       flex-wrap: wrap;
       justify-content: flex-end;
     }
-  }
 </style>
 
 
@@ -558,7 +685,7 @@
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="clock-news-logo.png" alt="Clock News Logo">
+      <!-- <img src="the-undertime-logo.webp" alt="The Undertime Logo"> -->
     </div>
     <nav class="main-nav">
       <a href="index.html" class="nav-link">Home</a>
@@ -569,9 +696,9 @@
 <!--Banner-->
 
 <div class="panoramic-banner">
-  <img src="Clock-News-sports-banner.webp" alt="Clock News Sports Banner">
+  <img src="Discover-Sports-Stories-Around-the-World-banner.webp" alt="Undertime Sports banner" loading="lazy">
 </div>
-
+<main>
 <!-- Inside your existing #filters div -->
 <div id="filters">
   <!-- Your existing buttons (Country, Type, Date) -->
@@ -598,43 +725,44 @@
     <button class="close-btn" id="closeMenu" aria-label="Close Menu">&times;</button>
     <a href="science-and-technology.html">Science & Technology</a>
     <a href="sports.html">Sports</a>
-    <a href="timeline.html">Timeline</a>
+    <a href="article-explorer.html">Article Explorer</a>
   </div>
 
   <!-- Article -->
-  <div class="article-container" data-sports="Hockey">
+  <div class="article-container" data-sport="Hockey">
   <div class="article-text">
-    <h2><strong><a href="">Sample Article Heading Goes Here</a></strong></h2>
+    <h2><a href="">Sample Article Heading Goes Here</a></h2>
     <p class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
     <p class="article-summary">This is a short summary of the article...</p>
   </div>
   <div class="article-image">
-    <img src="" alt="Article Image">
+    <img src="" alt="Article Image" loading="lazy">
   </div>
 </div>
 
 <!-- 🔴 Ad Block Here -->
   <div class="ad-block">
     <p>Advertisement</p>
-    <img src="https://dummyimage.com/728x90/cccccc/000000&text=Your+Ad+Here" alt="Ad" style="width:100%;">
+    <img src="" alt="Ad" style="width:100%;" loading="lazy">
   </div>
   
-<div class="article-container" data-sports="Tennis">
+<div class="article-container" data-sport="Tennis">
   <div class="article-text">
     <h2><strong><a href="">Sample Article Heading Goes Here</a></strong></h2>
     <p class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
     <p class="article-summary">This is a short summary of the article...</p>
   </div>
   <div class="article-image">
-    <img src="dubai.jpg" alt="Article Image">
+    <img src="" alt="Article Image" loading="lazy">
   </div>
 </div>
 
+</main>
   <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div class="footer-section">
-        <h3><strong>About Clock News</strong></h3>
+        <h3><strong>About The Undertime</strong></h3>
         <p><a href="about.html" target="_blank">About</a></p>
         <p><a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a></p>
         <p><a href="disclaimer.html" target="_blank">Disclaimer</a></p>
@@ -642,8 +770,8 @@
 
       <div class="footer-section">
         <h3><strong>Contact Info</strong></h3>
-        <p><a href="contact.html" target="_blank">Contact Clock News</a></p>
-        <p><a href="advertise.html" target="_blank">Advertise with Clock News</a></p>
+        <p><a href="contact.html" target="_blank">Contact Undertime</a></p>
+        <p><a href="advertise.html" target="_blank">Advertise with Undertime</a></p>
       </div>
 
       <div class="footer-section">
@@ -654,10 +782,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      © 2025 Clock News. All rights reserved.
+      © 2025 Undertime. All rights reserved.
     </div>
   </footer>
-<!-- JavaScript for Slide-out Menu -->
+
+  <!-- JavaScript for Slide-out Menu -->
  <script>
     const menuToggle = document.getElementById('menuToggle');
     const closeMenu = document.getElementById('closeMenu');
