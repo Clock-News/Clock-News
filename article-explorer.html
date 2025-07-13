@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Undertime | Article Explorer</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+	
+<!--Cookies-->
+<link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
+<script src="silktide-consent-manager.js"></script>
+<script>
+silktideCookieBannerManager.updateCookieBannerConfig({
+  background: {
+    showBackground: false
+  },
+  cookieIcon: {
+    position: "bottomLeft"
+  },
+  cookieTypes: [
+    {
+      id: "clock_cookie",
+      name: "Undertime Cookie ",
+      description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+      required: false,
+      onAccept: function() {
+        console.log('Add logic for the required Clock Cookie  here');
+      }
+    },
+    {
+      id: "analytical",
+      name: "Analytical",
+      description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+      required: false,
+      onAccept: function() {
+        console.log('Add logic for the required Analytical here');
+      }
+    },
+    {
+      id: "advertising",
+      name: "Advertising",
+      description: "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
+      required: false,
+      onAccept: function() {
+        console.log('Add logic for the required Advertising here');
+      }
+    }
+  ],
+  text: {
+    banner: {
+      description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+      acceptAllButtonText: "Accept all",
+      acceptAllButtonAccessibleLabel: "Accept all cookies",
+      rejectNonEssentialButtonText: "Reject non-essential",
+      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+      preferencesButtonText: "Preferences",
+      preferencesButtonAccessibleLabel: "Toggle preferences"
+    },
+    preferences: {
+      title: "Customize your cookie preferences",
+      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+      creditLinkText: "Get this banner for free",
+      creditLinkAccessibleLabel: "Get this banner for free"
+    }
+  },
+  position: {
+    banner: "bottomCenter"
+  }
+});
+</script>
+	
+<!--meta tags-->
+<!-- ====== SEO Tags ====== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="The Undertime | Explore Articles">
+<meta name="description" content="Whether you're curious about the world, science and technology, or sports, you'll find insightful articles on all these topics here — it's made for knowledge seekers, students, and curious minds.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="The Undertime">
+<meta name="language" content="en">
+
+<!-- ====== Canonical URL ====== -->
+<link rel="canonical" href="https://the-undertime.netlify.app/article-explorer">
+
+<!-- ====== Open Graph / Facebook ====== -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the-undertime.netlify.app/article-explorer">
+<meta property="og:title" content="The Undertime | Explore Articles">
+<meta property="og:description" content="Curious about the world, science, or sports? Discover engaging articles across global topics — built for curious minds, students, and lifelong learners.">
+<meta property="og:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
+<meta property="og:site_name" content="The Undertime">
+<meta property="og:locale" content="en_US">
+
+<!--Twitter Card-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://the-undertime.netlify.app/article-explorer">
+<meta name="twitter:title" content="The Undertime | Explore Articles">
+<meta name="twitter:description" content="Find articles on world affairs, science, and sports — written for knowledge seekers, students, and curious minds.">
+<meta name="twitter:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
+	
+<!-- ====== Site Verification Placeholders ====== -->
+<meta name="google-site-verification" content="50uo9QYBNQpqKqfs9k2JSv6veTnDd7xm8Ew7MnmRQYU" />
+<meta name="msvalidate.01" content="PLACEHOLDER_BING_CODE">
+<meta name="p:domain_verify" content="PLACEHOLDER_PINTEREST_CODE">
+
+<!-- ====== PWA / App-Like Behavior ====== -->
+<meta name="theme-color" content="#1a73e8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="U Articles">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- ====== Social Profiles ====== -->
+<meta property="og:profile" content="https://www.facebook.com/profile.php?id=61576479780082">
+<link rel="me" href="https://www.reddit.com/user/subworldnews/">
+<link rel="me" href="https://www.youtube.com/@Clocknews-Sub">
+
+<!-- ====== Dublin Core Metadata ====== -->
+<meta name="DC.title" content="The Undertime | Explore Articles">
+<meta name="DC.creator" content="The Undertime">
+<meta name="DC.publisher" content="The Undertime">
+<meta name="DC.language" content="en">
+<meta name="DC.description" content="Articles covering world events, science and technology, sports, and more — crafted for curious minds and knowledge seekers.">
+<meta name="DC.date" content="2025-07-01">
+
+<!--Schema markup-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "The Undertime",
+  "url": "https://the-undertime.netlify.app/article-explorer",
+  "logo": {
+  "@type": "ImageObject",
+  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
+},
+  "sameAs": [
+    "https://www.facebook.com/your-username",
+    "https://www.youtube.com/@yourchannel",
+    "https://www.reddit.com/user/yourusername"
+  ],
+  "description": "Whether you're curious about the world, science and technology, or sports, you'll find insightful articles on all these topics here — it's made for knowledge seekers, students, and curious minds.",
+  "foundingDate": "2025-07-01",
+  "email": "subworldnews@proton.me",
+  "address": {
+    "addressCountry": "Pakistan"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "The Undertime -  Explore Article",
+  "url": "https://the-undertime.netlify.app/article-explorer",
+  "isPartOf": {
+    "@type": "EducationalOrganization",
+    "name": "The Undertime"
+  },
+  "description": "Whether you're curious about the world, science and technology, or sports, you'll find insightful articles on all these topics here — it's made for knowledge seekers, students, and curious minds.",
+  "inLanguage": "en",
+ "primaryImageOfPage": {
+  "@type": "ImageObject",
+  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
+},
+  "datePublished": "2025-07-01",
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": "https://the-undertime.netlify.app"
+  }
+}
+</script>
+
+
+	
+<style>
+/* ----------------------- Font Faces (Assuming Local Fonts) ----------------------- */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat.bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Petrona';
+  src: url('fonts/petrona.regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Nimbus Roman No9 L';
+  src: url('fonts/NimbusRomNo9L-Reg.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+  /* ----------------------- Global Styles ----------------------- */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+  overflow-x: hidden;
+}
+
+  body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #1c1c1c;
+  }
+
+/* Global Text (default for paragraphs) */
+body,
+p,
+.article-summary,
+.article-preview p {
+  font-family: 'Petrona', serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1c1c1c;
+}
+
+/* Headings & Article Titles */
+h1, h2, h3, h4, h5, h6,
+.article-preview h3,
+.article-preview h3 a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation: Navbar, Sidemenu, Footer Links */
+.navbar,
+.navbar a,
+.nav-link,
+.side-menu,
+.side-menu a,
+footer a,
+footer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Captions ONLY (image captions, figcaption, reports) */
+.caption,
+figcaption,
+.article-preview small {
+  font-family: 'Nimbus Roman No9 L', serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  font-style: italic;
+}
+
+  a {
+    color: #023020;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2.5px;
+    background-color: #023020;
+    transition: width 0.4s ease;
+  }
+
+  a:hover::after {
+    width: 100%;
+    background-color: #6495ED;
+  }
+
+  /* ----------------------- Layout Container ----------------------- */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+  }
+
+  /* ----------------------- Navbar ----------------------- */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-bottom: 3px solid #F5F5F5;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 160px;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #023020;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .nav-link:hover {
+    background-color: #F5F5DC;
+    color: #023020;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #023020;
+  }
+
+/* ----------------------- Banner ----------------------- */
+
+.panoramic-banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.panoramic-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 600px;
+  object-fit: cover;
+}
+	
+  /* ----------------------- Slide-out Side Menu ----------------------- */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -3px 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1100;
+  }
+
+  .side-menu a {
+    display: block;
+    width: 100%;
+    color: #023020;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px 12px;
+    border: 2.5px solid #FAEBD7;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .side-menu a:hover {
+    background-color: #dff0e0;
+    color: #023020;
+  }
+
+  .close-btn {
+    align-self: flex-end;
+    font-size: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #023020;
+    margin-bottom: 20px;
+  }
+
+/* Article Card */
+#articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.article-preview {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.article-preview:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.article-preview h3 {
+  font-size: 1rem;
+  margin: 0 0 4px;
+  color: #111;
+  font-weight: 600;
+}
+
+.article-preview h3 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.article-preview h3 a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
+.article-preview small {
+  font-size: 0.78rem;
+  color: #666;
+}
+
+.article-preview p {
+  font-size: 0.9rem;
+  color: #222;
+  margin: 4px 0 0;
+}
+
+
+
+  /* ----------------------- Ad Block ----------------------- */
+  .ad-block {
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+  }
+
+  /* ----------------------- Footer ----------------------- */
+  footer {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 40px 20px 20px 20px;
+    border-top: 1px solid #ddd;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    flex: 1 1 250px;
+  }
+
+  .footer-section h3 {
+    font-weight: bold;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #777;
+  }
+
+  footer a {
+    color: #023020;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+    color: #005a2b;
+  }
+
+/*------------------------filter button--------------------------*/
+    .category-btn {
+      background-color: #fff;
+      border: 1px solid #d5d9d9;
+      border-radius: 8px;
+      box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+      box-sizing: border-box;
+      color: #0f1111;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Amazon Ember",sans-serif;
+      font-size: 13px;
+      line-height: 29px;
+      padding: 0 14px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      vertical-align: middle;
+      width: auto;
+      min-width: 100px;
+      margin-right: 10px;
+    }
+
+    .filter-wrapper {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+      width: 200px;
+      margin-top: 5px;
+    }
+
+    .article-preview {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+
+#filters input[type="date"] {
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#searchInput {
+  padding: 6px 10px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+
+/*--------------Scroll Button------------*/
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#scrollToTopBtn img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+#scrollToTopBtn:hover img {
+  transform: scale(1.1); /* Optional: zoom on hover */
+}
+
+
+  /* ----------------------- Responsive Design ----------------------- */
+/* ==================== RESPONSIVE ADJUSTMENTS ==================== */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  #articles-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+  
+  .footer-content {
+    gap: 20px;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  /* Navbar adjustments */
+  .navbar {
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: 130px;
+  }
+  
+  /* Filters adjustments */
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+  }
+  
+  .filter-wrapper {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  
+  #searchInput {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  /* Article grid adjustments */
+  #articles-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    padding: 0 5px;
+  }
+  
+  /* Footer adjustments */
+  .footer-section {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Date filter adjustments */
+  #filters input[type="date"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  /* Ensure dropdowns are visible */
+  .dropdown-content {
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: flex;
+    flex-direction: row; /* 🟢 Keep items in one row */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;   /* 🟢 Prevent wrapping */
+    width: 100%;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 36px;
+    width: auto;
+  }
+}
+
+  
+  .panoramic-banner img {
+    max-height: 200px;
+  }
+  
+  .category-btn {
+    min-width: auto;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  
+  .article-preview {
+    padding: 10px;
+  }
+}
+
+/* Ensure all buttons remain visible and clickable */
+button, .category-btn {
+  min-height: 36px; /* Minimum touch target size for mobile */
+}
+
+/* Prevent text from becoming too small */
+body {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="the-undertime-logo.webp" alt="The Undertime Logo">
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">&#9776;</button>
+    </nav>
+  </header>
+
+
+<!-- FILTER BUTTONS -->
+<div id="filters">
+  <!-- Category -->
+  <div class="filter-wrapper">
+    <button class="category-btn" onclick="toggleDropdown('categoryDropdown')">Category ▼</button>
+    <div id="categoryDropdown" class="dropdown-content">
+      <strong>Select Category</strong><br>
+      <label><input type="radio" name="category" value="world" onchange="updateSubCategories(this.value)"> World</label><br>
+      <label><input type="radio" name="category" value="science" onchange="updateSubCategories(this.value)"> Science & Technology</label><br>
+      <label><input type="radio" name="category" value="sports" onchange="updateSubCategories(this.value)"> Sports</label>
+    </div>
+  </div>
+
+  <!-- Sub-Category -->
+  <div class="filter-wrapper">
+    <button class="category-btn" onclick="toggleDropdown('subCategoryDropdown')">Sub-Category ▼</button>
+    <div id="subCategoryDropdown" class="dropdown-content">
+      <strong>Select Sub-Category</strong><br>
+      <div id="subCategoryOptions"><em>Select a category first</em></div>
+    </div>
+  </div>
+
+<!-- Date Filter -->
+<div class="filter-wrapper">
+  <label for="fromDate"><strong>From:</strong></label>
+  <input type="date" id="fromDate" onchange="filterArticles()">
+
+  <label for="toDate"><strong>To:</strong></label>
+  <input type="date" id="toDate" onchange="filterArticles()">
+</div>
+
+<div class="filter-wrapper">
+  <input type="text" id="searchInput" placeholder="Search articles..." oninput="filterArticles()" />
+</div>
+
+<div class="filter-wrapper">
+  <button class="category-btn" onclick="clearFilters()">Clear Filters</button>
+</div>
+
+
+</div>
+
+<!-- Scroll up button -->
+<button id="scrollToTopBtn" title="Go to top">
+  <img src="up-arrow.png" alt="Scroll to Top" />
+</button>
+
+  <!-- Slide-out Menu -->
+  <div class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close Menu">&times;</button>
+    <a href="science-and-technology.html">Science & Technology</a>
+    <a href="sports.html">Sports</a>
+    <a href="article-explorer.html">Article Explorer</a>
+  </div>
+  
+<!-- Article -->
+<!-- Article Previews -->
+<div id="articles-grid">
+<div class="article-preview" data-category="world" data-subcategory="india" data-date="2025-07-01">
+    <h3><a href="#"><strong>World Affairs</strong></a></h3>
+    <p><small><em>20 June 2025 | World</em></small></p>
+    <p>Asia's political changes in focus.</p>
+  </div>
+
+  <div class="article-preview" data-category="science" data-subcategory="ai" data-date="2025-06-15">
+    <h3><a href="#"><strong>AI Revolution</strong></a></h3>
+    <p><small><em>15 June 2025 | Science</em></small></p>
+    <p>AI is transforming industries globally.</p>
+  </div>
+
+<!-- 🔴 Ad Block Here -->
+  <div class="ad-block">
+    <p>Advertisement</p>
+    <img src="https://dummyimage.com/728x90/cccccc/000000&text=Your+Ad+Here" alt="Ad" style="width:100%;">
+  </div>
+
+  <!-- More articles... -->
+</div>
+
+<!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><strong>About The Undertime</strong></h3>
+        <p><a href="about.html" target="_blank">About</a></p>
+        <p><a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a></p>
+        <p><a href="disclaimer.html" target="_blank">Disclaimer</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3><strong>Contact Info</strong></h3>
+        <p><a href="contact.html" target="_blank">Contact Undertime</a></p>
+        <p><a href="advertise.html" target="_blank">Advertise with Undertime</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3><strong>Social Media</strong></h3>
+        <p><a href="https://www.youtube.com/@Clocknews-Sub" target="_blank">YouTube</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=61576479780082" target="_blank">Facebook</a></p>
+        <p><a href="https://www.reddit.com/user/subworldnews/" target="_blank">Reddit</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 The Undertime. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript for Slide-out Menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const closeMenu = document.getElementById('closeMenu');
+    const sideMenu = document.getElementById('sideMenu');
+
+    menuToggle.addEventListener('click', () => {
+      sideMenu.style.right = '0';
+    });
+
+    closeMenu.addEventListener('click', () => {
+      sideMenu.style.right = '-260px';
+    });
+
+    window.addEventListener('click', function (e) {
+  if (!sideMenu.contains(e.target) && e.target !== menuToggle) {
+    sideMenu.style.right = '-260px';
+  }
+});
+  </script>
+  
+ <script>
+let selectedCategory = null;
+let selectedSubCategory = []; // ✅ now an array to support multiple selections
+
+function toggleDropdown(id) {
+  const all = document.querySelectorAll('.dropdown-content');
+  all.forEach(drop => {
+    drop.style.display = drop.id === id && drop.style.display !== 'block' ? 'block' : 'none';
+  });
+}
+
+function updateSubCategories(category) {
+  selectedCategory = category;
+  selectedSubCategory = []; // ✅ reset array
+  const container = document.getElementById("subCategoryOptions");
+
+  if (category === "world") {
+    const countries = [
+      { name: "Pakistan", value: "pakistan" },
+      { name: "India", value: "india" },
+      { name: "United States", value: "usa" },
+      { name: "United Kingdom", value: "uk" },
+      { name: "Germany", value: "germany" },
+      { name: "France", value: "france" },
+      { name: "China", value: "china" },
+      { name: "Australia", value: "australia" },
+      { name: "Canada", value: "canada" },
+      { name: "Japan", value: "japan" }
+    ];
+
+    container.innerHTML = `
+      <input type="text" id="countrySearch" placeholder="Search country..." oninput="filterCountries()" style="width: 100%; padding: 6px; border-radius: 4px; border: 1px solid #ccc; margin-bottom: 8px;">
+      <div id="countryList"></div>
+    `;
+
+    window.renderCountryList = function (list) {
+      const listDiv = document.getElementById('countryList');
+      listDiv.innerHTML = list.map(c =>
+        `<label><input type="checkbox" name="subCategory" value="${c.value}" onchange="selectSubCategory()"> ${c.name}</label><br>`
+      ).join('');
+    };
+
+    window.filterCountries = function () {
+      const query = document.getElementById('countrySearch').value.toLowerCase();
+      const filtered = countries.filter(c => c.name.toLowerCase().includes(query));
+      renderCountryList(filtered);
+    };
+
+    renderCountryList(countries);
+
+  } else if (category === "science") {
+    container.innerHTML = `
+      <label><input type="checkbox" name="subCategory" value="ai" onchange="selectSubCategory()"> AI</label><br>
+      <label><input type="checkbox" name="subCategory" value="space" onchange="selectSubCategory()"> Space</label>
+    `;
+  } else if (category === "sports") {
+    container.innerHTML = `
+      <label><input type="checkbox" name="subCategory" value="cricket" onchange="selectSubCategory()"> Cricket</label><br>
+      <label><input type="checkbox" name="subCategory" value="football" onchange="selectSubCategory()"> Football</label>
+    `;
+  }
+
+  filterArticles(); // filter by category only at this point
+}
+
+// ✅ Now handles multiple selected subcategories
+function selectSubCategory() {
+  const checked = document.querySelectorAll('input[name="subCategory"]:checked');
+  selectedSubCategory = Array.from(checked).map(input => input.value);
+  filterArticles();
+}
+
+function filterArticles() {
+  const articles = document.querySelectorAll('.article-preview');
+
+  const fromDate = document.getElementById('fromDate')?.value;
+  const toDate = document.getElementById('toDate')?.value;
+  const searchText = document.getElementById('searchInput')?.value.toLowerCase();
+
+  articles.forEach(article => {
+    const cat = article.dataset.category;
+    const sub = article.dataset.subcategory;
+    const date = article.dataset.date;
+    const content = article.textContent.toLowerCase();
+
+    let show = true;
+
+    // Category filter
+    if (selectedCategory && cat !== selectedCategory) {
+      show = false;
+    }
+
+    // ✅ Sub-category multi-selection filter
+    if (selectedSubCategory.length > 0 && !selectedSubCategory.includes(sub)) {
+      show = false;
+    }
+
+    if (fromDate && date < fromDate) {
+      show = false;
+    }
+
+    if (toDate && date > toDate) {
+      show = false;
+    }
+
+    if (searchText && !content.includes(searchText)) {
+  show = false;
+}
+
+    article.style.display = show ? 'block' : 'none';
+  });
+function fuzzyMatch(input, text) {
+  const pattern = input.split('').map(char => `.*${char}`).join('');
+  const regex = new RegExp(pattern, 'i'); // 'i' for case-insensitive
+  return regex.test(text);
+}
+}
+
+function clearFilters() {
+  selectedCategory = null;
+  selectedSubCategory = [];
+
+  document.querySelectorAll('input[name="category"]').forEach(el => el.checked = false);
+  document.querySelectorAll('input[name="subCategory"]').forEach(el => el.checked = false);
+
+  const subContainer = document.getElementById("subCategoryOptions");
+  subContainer.innerHTML = "<em>Select a category first</em>";
+
+  document.getElementById('fromDate').value = '';
+  document.getElementById('toDate').value = '';
+  document.getElementById('searchInput').value = '';
+
+  filterArticles();
+}
+
+document.addEventListener('click', function (event) {
+  const isDropdownButton = event.target.closest('.category-btn');
+  const isInsideDropdown = event.target.closest('.dropdown-content');
+
+  if (!isDropdownButton && !isInsideDropdown) {
+    document.querySelectorAll('.dropdown-content').forEach(drop => {
+      drop.style.display = 'none';
+    });
+  }
+});
+</script>
+
+
+<script>
+  const scrollBtn = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  scrollBtn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+</script>
+
+
+</body>
+</html>
+
