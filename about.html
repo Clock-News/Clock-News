@@ -1,9 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>The Undertime | About</title>
 
-<title>Clock News</title>
+<!--Favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<!--Cookies-->
+<link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
+<script src="silktide-consent-manager.js"></script>
+<script>
+silktideCookieBannerManager.updateCookieBannerConfig({
+  background: {
+    showBackground: false
+  },
+  cookieIcon: {
+    position: "bottomLeft"
+  },
+  cookieTypes: [
+    {
+      id: "necessary",
+      name: "Necessary",
+      description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+      required: true,
+      onAccept: function() {
+        console.log('Add logic for the required Necessary here');
+      }
+    },
+    {
+      id: "analytical",
+      name: "Analytical",
+      description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+      required: false,
+      onAccept: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+        });
+        dataLayer.push({
+          'event': 'consent_accepted_analytical',
+        });
+      },
+      onReject: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+        });
+      }
+    }
+  ],
+  text: {
+    banner: {
+      description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+      acceptAllButtonText: "Accept all",
+      acceptAllButtonAccessibleLabel: "Accept all cookies",
+      rejectNonEssentialButtonText: "Reject non-essential",
+      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+      preferencesButtonText: "Preferences",
+      preferencesButtonAccessibleLabel: "Toggle preferences"
+    },
+    preferences: {
+      title: "Customize your cookie preferences",
+      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+      creditLinkText: "Get this banner for free",
+      creditLinkAccessibleLabel: "Get this banner for free"
+    }
+  },
+  position: {
+    banner: "bottomLeft"
+  }
+});
+</script>
+
+	
+  
+<!--meta tags-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="The Undertime | About">
+<meta name="description" content="The Undertime is an independent site sharing simple, clear, and meaningful articles on the world, science, and sports — built for real understanding.">
+<meta name="author" content="The Undertime">
+<meta name="language" content="en">
+<meta name="robots" content="index, follow">
+
+<!--OPen graph-->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the-undertime.netlify.app/about">
+<meta property="og:title" content="The Undertime | About">
+<meta property="og:description" content="The Undertime shares clear, simple articles on science, the world, and sports — made by one person who values understanding over noise.">
+<meta property="og:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
+<meta property="og:site_name" content="The Undertime">
+<meta property="og:locale" content="en_US">
+
+<!--Twitter Card-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://the-undertime.netlify.app/about">
+<meta name="twitter:title" content="The Undertime">
+<meta name="twitter:description" content="Explore science, world, and sports topics with clear, simple articles. The Undertime values real understanding — not just headlines.">
+<meta name="twitter:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
+
+<link rel="canonical" href="https://the-undertime.netlify.app/about">
+
+	
+<!-- ====== Site Verification Placeholders ====== -->
+<meta name="google-site-verification" content="50uo9QYBNQpqKqfs9k2JSv6veTnDd7xm8Ew7MnmRQYU" />
+<meta name="msvalidate.01" content="PLACEHOLDER_BING_CODE">
+<meta name="p:domain_verify" content="PLACEHOLDER_PINTEREST_CODE">
+
+<!-- ====== PWA / App-Like Behavior ====== -->
+<meta name="theme-color" content="#1a73e8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="U About">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- ====== Social Profiles ====== -->
+<meta property="og:profile" content="https://www.facebook.com/profile.php?id=61576479780082">
+<link rel="me" href="https://www.reddit.com/user/subworldnews/">
+<link rel="me" href="https://www.youtube.com/@Clocknews-Sub">
+
+<!-- ====== Dublin Core Metadata ====== -->
+<meta name="DC.title" content="The Undertime | About">
+<meta name="DC.creator" content="The Undertime">
+<meta name="DC.publisher" content="The Undertime">
+<meta name="DC.language" content="en">
+<meta name="DC.description" content="The Undertime is an independent website offering clear, informative articles on science, world topics, and sports for better understanding.">
+<meta name="DC.date" content="2025-07-01">
+
+<!--Schema markup-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "The Undertime",
+  "url": "https://the-undertime.netlify.app",
+  "logo": {
+  "@type": "ImageObject",
+  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
+},
+  "sameAs": [
+    "https://www.facebook.com/your-username",
+    "https://www.youtube.com/@yourchannel",
+    "https://www.reddit.com/user/yourusername"
+  ],
+  "description": "The Undertime is a site that provides simple, well-explained articles on science, the world, and sports — created to promote real understanding.",
+  "foundingDate": "2025-07-01",
+  "email": "subworldnews@proton.me",
+  "address": {
+    "addressCountry": "Pakistan"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "The Undertime",
+  "url": "https://the-undertime.netlify.app/about",
+  "isPartOf": {
+    "@type": "EducationalOrganization",
+    "name": "The Undertime"
+  },
+  "description": "The Undertime is a site that provides simple, well-explained articles on science, the world, and sports — created to promote real understanding.",
+  "inLanguage": "en",
+ "primaryImageOfPage": {
+  "@type": "ImageObject",
+  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
+},
+  "datePublished": "2025-07-01",
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": "https://the-undertime.netlify.app/about"
+  }
+}
+</script>
+
+
 <style>
+/* ----------------------- Font Faces (Assuming Local Fonts) ----------------------- */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat.bold.ttf') format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Petrona';
+  src: url('fonts/petrona.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nimbus Roman No9 L';
+  src: url('fonts/NimbusRomNo9L-Reg.otf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+/* ----------------------- Global Styles ----------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* ----------------------- Global Styles ----------------------- */
 * {
   box-sizing: border-box;
@@ -12,24 +228,53 @@
 }
 
 body {
-  font-family: Cambria, serif; /* Content paragraphs */
+  font-family: 'Petrona', serif;
   font-size: 19px;
-  line-height: 1.7;
+  line-height: 1.6;
   background-color: #ffffff;
   color: #1c1c1c;
 }
 
-/* Content Headings */
+/* Headings */
 .about-container h1,
 .about-container h2,
 .about-container h3,
 .about-container h4,
 .about-container h5,
 .about-container h6 {
-  font-family: Helvetica, Inter, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   margin-bottom: 20px;
   color: #023020;
+}
+
+/* Navigation */
+.navbar,
+.navbar a,
+.nav-link,
+.side-menu,
+.side-menu a,
+footer a,
+footer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Special text elements */
+.about-container em,
+.about-container strong {
+  font-family: 'Petrona', serif;
+}
+
+/* Footer headings */
+.footer-section h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Captions and small text */
+.about-container small,
+.footer-bottom {
+  font-family: 'Nimbus Roman No9 L', serif;
+  font-size: 14px;
 }
 
 /* Content Container */
@@ -219,7 +464,7 @@ footer a:hover {
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="clock-news-logo.png" alt="Clock News Logo">
+      <img src="the-undertime-logo.webp" alt="The Undertime Logo" loading="lazy">
     </div>
     <nav class="main-nav">
       <a href="index.html" class="nav-link">Home</a>
@@ -232,57 +477,50 @@ footer a:hover {
     <button class="close-btn" id="closeMenu" aria-label="Close Menu">&times;</button>
     <a href="science-and-technology.html">Science & Technology</a>
     <a href="sports.html">Sports</a>
-    <a href="old-news.html">Old News</a>
+    <a href="article-explorer.html">Article Explorer</a>
   </div>
   
-  <div class="about-container">
-    <h1>About Clock News</h1>
-    <p>
-      Clock News started as a small project by someone who wasn’t a professional journalist or developer —
-      just someone who cared about real news and wanted to share it clearly and honestly. There's no team or
-      funding behind it, and everything is built step by step, learning as it goes.
-    </p>
-    <p>
-      The goal is simple: give people a place where they can read news without the drama.
-      No clickbait, no noise — just meaningful updates about politics, sports, technology,
-      and the world, with special attention to South Asia.
-    </p>
-    <p>
-      Clock News uses only trusted sources like BBC News, Al Jazeera English, Reuters, Dawn,
-      The Hindu, The Daily Star, The Kathmandu Post, The Japan Times, The Straits Times,
-      South China Morning Post, TechCrunch, Nature News, and Muslim News. While updates may
-      not always be immediate, they aim to be real — not rushed, not hyped.
-    </p>
-    <p>
-      This site is also part of a learning journey. It's built by someone who's still learning coding,
-      design, and writing — combining small skills to build something bigger over time.
-      It’s not about perfection. It’s about progress.
-    </p>
-    <p>
-      Clock News hopes to grow into something more useful — maybe even inspiring others who are
-      starting with little but want to build something honest.
-    </p>
-    <p>
-      Truly appreciate your visit. If even one thought here made you pause, reflect,
-      or see things a little more clearly, then this effort has been worthwhile.
-    </p>
-  </div>
+  <main>
+  <div class="about-container"> 
+  <h1>About The Undertime</h1>
+  <p style="margin-bottom: 1.2em;">
+    The Undertime website was created with a simple goal of providing a place where you can understand and gain <b>knowledge/information</b> about world,
+	science, and sports topics. It is not backed by any big company or team — just one person who believes that real understanding is more important than
+	superficial information.
+  </p>
+  <p style="margin-bottom: 1.2em;">
+    This site is designed to write informative articles that help people truly understand what they're reading about—not just <b>skimming</b> the headlines. 
+	Each article is designed to clearly explain topics, using a style that breaks things down in a simple and meaningful way.
+
+  </p>
+  <p style="margin-bottom: 1.2em;">
+    Behind this is a person who <b>enjoys knowledge</b> and believes <b>accurate information</b> is not about using big words - it's about <b>simplifying</b> big ideas.
+
+  </p>
+  <p style="margin-bottom: 1.2em; text-align: center;">
+    <em><strong>(A little knowledge without understanding can create the illusion of mastery—but true understanding reveals how much more there is to learn.)</strong></em>
+  </p>
+  <p style="margin-bottom: 1.2em;">
+    Welcome to The Undertime — where understanding comes first.
+  </p>
+</div>
+</main>
   
   
    <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div class="footer-section">
-        <h3><strong>About Clock News</strong></h3>
+        <h3>About The Undertime</h3>
         <p><a href="about.html" target="_blank">About</a></p>
         <p><a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a></p>
         <p><a href="disclaimer.html" target="_blank">Disclaimer</a></p>
       </div>
 
       <div class="footer-section">
-        <h3><strong>Contact Info</strong></h3>
-        <p><a href="contact.html" target="_blank">Contact Clock News</a></p>
-        <p><a href="advertise.html" target="_blank">Advertise with Clock News</a></p>
+        <h3>Contact Info</h3>
+        <p><a href="contact.html" target="_blank">Contact Undertime</a></p>
+        <p><a href="advertise.html" target="_blank">Advertise with Undertime</a></p>
       </div>
 
       <div class="footer-section">
@@ -293,7 +531,7 @@ footer a:hover {
       </div>
     </div>
     <div class="footer-bottom">
-      © 2025 Clock News. All rights reserved.
+      © 2025 The Undertime. All rights reserved.
     </div>
   </footer>
 
