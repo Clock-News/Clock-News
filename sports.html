@@ -11,8 +11,8 @@
 
 
 <!--Cookies-->
-<link rel="stylesheet" id="silktide-consent-manager-css" href="path-to-css/silktide-consent-manager.css">
-<script src="path-to-js/silktide-consent-manager.js"></script>
+<link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
+<script src="silktide-consent-manager.js"></script>
 <script>
 silktideCookieBannerManager.updateCookieBannerConfig({
   background: {
@@ -190,24 +190,28 @@ silktideCookieBannerManager.updateCookieBannerConfig({
   font-family: 'Montserrat';
   src: url('fonts/montserrat.bold.ttf') format('truetype');
   font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
   font-family: 'Petrona';
   src: url('fonts/petrona.regular.ttf') format('truetype');
   font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
   font-family: 'Nimbus Roman No9 L';
   src: url('fonts/NimbusRomNo9L-Reg.otf') format('opentype');
   font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
   font-family: 'Open Sans';
   src: url('fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
+	font-display: swap;
 }
 
   /* ----------------------- Global Styles ----------------------- */
@@ -690,7 +694,7 @@ figcaption {
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="the-undertime-logo.webp" alt="The Undertime Logo">
+      <img src="the-undertime-logo.webp" alt="The Undertime Logo" loading="lazy">
     </div>
     <nav class="main-nav">
       <a href="index.html" class="nav-link">Home</a>
