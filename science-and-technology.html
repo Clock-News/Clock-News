@@ -21,30 +21,35 @@ silktideCookieBannerManager.updateCookieBannerConfig({
   },
   cookieTypes: [
     {
-      id: "clock_cookie",
-      name: "The Undertime Cookie ",
+      id: "necessary",
+      name: "Necessary",
       description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
       required: true,
       onAccept: function() {
-        console.log('Add logic for the required Clock Cookie  here');
+        console.log('Add logic for the required Necessary here');
       }
     },
     {
       id: "analytical",
       name: "Analytical",
       description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
-      required: true,
+      required: false,
       onAccept: function() {
-        console.log('Add logic for the required Analytical here');
-      }
-    },
-    {
-      id: "advertising",
-      name: "Advertising",
-      description: "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
-      required: true,
-      onAccept: function() {
-        console.log('Add logic for the required Advertising here');
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+        });
+        dataLayer.push({
+          'event': 'consent_accepted_analytical',
+        });
+      },
+      onReject: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+        });
       }
     }
   ],
@@ -66,11 +71,10 @@ silktideCookieBannerManager.updateCookieBannerConfig({
     }
   },
   position: {
-    banner: "bottomCenter"
+    banner: "bottomLeft"
   }
 });
 </script>
-
 	
 <!--meta tags-->
 <!-- ====== SEO Tags ====== -->
@@ -78,7 +82,6 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="title" content="The Undertime | Science & Technology">
 <meta name="description" content="Learn about science and technology on The Undertime. Explore AI, wellness, space exploration, clean energy, robotics, and other breakthroughs — designed for curious minds, students, and knowledge seekers eager to stay informed about innovations shaping our world.">
-<meta name="keywords" content="AI, World technology, Robots, movie, Mars, tech trends, undertime, science and tech Pakistan, digital innovation">
 <meta name="robots" content="index, follow">
 
 
@@ -103,7 +106,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 <meta name="theme-color" content="#1a73e8">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="The Undertime">
+<meta name="apple-mobile-web-app-title" content="U Sci">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
 
@@ -118,7 +121,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 <link rel="me" href="https://www.youtube.com/@Clocknews-Sub">
 
 <!-- ====== Dublin Core Metadata ====== -->
-<meta name="DC.title" content="The Undertime">
+<meta name="DC.title" content="The Undertime | Science & Technology">
 <meta name="DC.creator" content="The Undertime">
 <meta name="DC.publisher" content="The Undertime">
 <meta name="DC.language" content="en">
@@ -182,24 +185,28 @@ silktideCookieBannerManager.updateCookieBannerConfig({
   font-family: 'Montserrat';
   src: url('fonts/montserrat.bold.ttf') format('truetype');
   font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
   font-family: 'Petrona';
   src: url('fonts/petrona.regular.ttf') format('truetype');
   font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
   font-family: 'Nimbus Roman No9 L';
   src: url('fonts/NimbusRomNo9L-Reg.otf') format('opentype');
   font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
   font-family: 'Open Sans';
   src: url('fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
+	font-display: swap;
 }
   
   
@@ -687,7 +694,7 @@ figcaption {
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="the-undertime-logo.webp" alt="The Undertime Logo">
+      <img src="the-undertime-logo.webp" alt="The Undertime Logo" loading="lazy">
     </div>
     <nav class="main-nav">
       <a href="index.html" class="nav-link">Home</a>
@@ -698,7 +705,7 @@ figcaption {
 <!--Banner-->
 
 <div class="panoramic-banner">
-  <img src="Discover-Science-&-Technology-Around-the-World-banner.webp" alt="Undertime Science & Technology Banner">
+  <img src="Discover-Science-&-Technology-Around-the-World-banner.webp" alt="Undertime Science & Technology Banner" loading="lazy">
 </div>
 	
 	<div id="filters">
