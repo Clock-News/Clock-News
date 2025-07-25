@@ -2,7 +2,7 @@
   "name": "The Undertime",
   "short_name": "Undertime",
   "description": "General Knowledge & Facts About the World",
-  "start_url": "/",
+  "start_url": "https://the-undertime.netlify.app",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
