@@ -9,6 +9,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
+	<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <!--Cookies-->
 <link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
@@ -805,9 +807,9 @@ figcaption {
   <a href="article.html" class="article-link">
   <div class="article-container" data-category="Geography" data-continent="Asia">
     <div class="article-text">
-      <h2>Geography of India</h2>
-      <p class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
-      <p class="article-summary">This is a short summary of the article...</p>
+      <h2 data-aos="fade-up">Geography of India</h2>
+      <p data-aos="zoom-in" class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
+      <p data-aos="zoom-in" class="article-summary">This is a short summary of the article...</p>
     </div>
     <div class="article-image">
       <img src="" alt="Article Image" loading="lazy">
@@ -825,9 +827,9 @@ figcaption {
 <a href="article.html" class="article-link">
   <div class="article-container" data-category="Tradition" data-continent="Asia">
     <div class="article-text">
-      <h2>Traditional clothes of pakistan</h2>
-      <p class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
-      <p class="article-summary">This is a short summary of the article...</p>
+      <h2 data-aos="fade-up">Traditional clothes of pakistan</h2>
+      <p data-aos="zoom-in" class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
+      <p data-aos="zoom-in" class="article-summary">This is a short summary of the article...</p>
     </div>
     <div class="article-image">
       <img src="" alt="Article Image" loading="lazy">
@@ -839,9 +841,9 @@ figcaption {
 <a href="article.html" class="article-link">
   <div class="article-container" data-category="Geography" data-continent="Asia">
     <div class="article-text">
-      <h2>Geography of Pakistan</h2>
-      <p class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
-      <p class="article-summary">This is a short summary of the article...</p>
+      <h2 data-aos="fade-up">Geography of Pakistan</h2>
+      <p data-aos="zoom-in" class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
+      <p data-aos="zoom-in" class="article-summary">This is a short summary of the article...</p>
     </div>
     <div class="article-image">
       <img src="" alt="Article Image" loading="lazy">
@@ -986,6 +988,12 @@ function clearAllFilters() {
       .catch(error => console.error('Service Worker error:', error));
   }
 </script>	
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init(); // initialize AOS
+</script>
 	
 </body>
 </html>
