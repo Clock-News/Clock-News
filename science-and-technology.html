@@ -527,6 +527,23 @@ figcaption {
     transform: scale(1.02);
   }
 
+.article-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.article-link .article-meta,
+.article-link .article-summary {
+  font-weight: normal;
+  color: inherit;
+}
+
+.article-link:hover .article-container {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+	
   /* ----------------------- Ad Block ----------------------- */
   .ad-block {
     background-color: #f9f9f9;
@@ -784,11 +801,12 @@ figcaption {
   </div>
 
   <!-- Article -->
-  <div class="article-container" data-topic="Health">
+  <a href="article.html" class="article-link">
+<div class="article-container" data-topic="Health">
   <div class="article-text">
-    <h2><a href="">Sample Article Heading Goes Here</a></h2>
-    <p class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
-    <p class="article-summary">This is a short summary of the article...</p>
+    <h2 data-aos="fade-up">Sample Article Heading Goes Here</a></h2>
+    <p data-aos="zoom-in" class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
+    <p data-aos="zoom-in" class="article-summary">This is a short summary of the article...</p>
   </div>
   <div class="article-image">
     <img src="" alt="Article Image" loading="lazy">
@@ -800,12 +818,13 @@ figcaption {
     <p>Advertisement</p>
     <img src="" alt="Advertisement" style="width:100%;">
   </div>
-  
+
+<a href="article.html" class="article-link">
 <div class="article-container" data-topic="Space">
   <div class="article-text">
-    <h2><a href="">Sample Article Heading Goes Here</a></h2>
-    <p class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
-    <p class="article-summary">This is a short summary of the article...</p>
+    <h2 data-aos="fade-up">Sample Article Heading Goes Here</a></h2>
+    <p data-aos="zoom-in" class="article-meta">June 12, 2025 | <span class="sponsored">Sponsored</span></p>
+    <p data-aos="zoom-in" class="article-summary">This is a short summary of the article...</p>
   </div>
   <div class="article-image">
     <img src="" alt="Article Image" loading="lazy">
