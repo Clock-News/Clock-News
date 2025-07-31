@@ -126,47 +126,36 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 
 
 <!--Schema markup-->
+<!-- WebSite schema (only on homepage) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
+  "@type": "WebSite",
   "name": "The Undertime",
   "url": "https://the-undertime.netlify.app",
-  "logo": {
-  "@type": "ImageObject",
-  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
-},
-  "sameAs": [
-    "https://www.facebook.com/your-username",
-    "https://www.youtube.com/@yourchannel",
-    "https://www.reddit.com/user/yourusername"
-  ],
-  "description": "The Undertime offers clear, simple, and understandable information — about Science, Sports, and topics like the History of countries, Geography, and Technology.",
-  "foundingDate": "2025-07-01",
-  "email": "subworldnews@proton.me",
-  "address": {
-    "addressCountry": "Pakistan"
+  "inLanguage": "en",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://the-undertime.netlify.app/search?q={search_term_string}",
+    "query-input": "required name=q"
   }
 }
 </script>
 
+<!-- WebPage schema (also on homepage) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "General Knowledge & Facts About the World",
   "url": "https://the-undertime.netlify.app",
-  "isPartOf": {
-  "@type": "WebSite",
-  "name": "The Undertime",
-  "url": "https://the-undertime.netlify.app"
-},
-  "description": "The Undertime offers clear, simple, and understandable information — about Science, Sports, and topics like the History of country, Geography, and Technology.",
+  "description": "The Undertime offers clear, simple, and understandable information — about Science, Sports, and topics like the History of countries, Geography, and Technology.",
   "inLanguage": "en",
- "primaryImageOfPage": {
-  "@type": "ImageObject",
-  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
-}
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "The Undertime",
+    "url": "https://the-undertime.netlify.app"
+  }
 }
 </script>
 
