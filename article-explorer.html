@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>The Undertime | Article Explorer</title>
+  <title>Amazing Articles on Countries, Technology, Sports & More – All in One Place</title>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 	
+	<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+	
 <!--Cookies-->
-<link rel="stylesheet" id="silktide-consent-manager-css" href="path-to-css/silktide-consent-manager.css">
-<script src="path-to-js/silktide-consent-manager.js"></script>
+<link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
+<script src="silktide-consent-manager.js"></script>
 <script>
 silktideCookieBannerManager.updateCookieBannerConfig({
   background: {
@@ -80,11 +83,10 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 <!-- ====== SEO Tags ====== -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="title" content="The Undertime | Explore Articles">
-<meta name="description" content="Whether you're curious about the world, science and technology, or sports, you'll find insightful articles on all these topics here — it's made for knowledge seekers, students, and curious minds.">
+<meta name="title" content="Amazing Articles on Countries, Technology, Sports & More – All in One Place">
+<meta name="description" content="Read amazing articles about countries, technology, sports, history, geography, and more. The Undertime presents it all in a simple, clear, and informative way.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="The Undertime">
-<meta name="language" content="en">
 
 <!-- ====== Canonical URL ====== -->
 <link rel="canonical" href="https://the-undertime.netlify.app/article-explorer">
@@ -92,18 +94,20 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 <!-- ====== Open Graph / Facebook ====== -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the-undertime.netlify.app/article-explorer">
-<meta property="og:title" content="The Undertime | Explore Articles">
-<meta property="og:description" content="Curious about the world, science, or sports? Discover engaging articles across global topics — built for curious minds, students, and lifelong learners.">
+<meta property="og:title" content="Amazing Articles on Countries, Tech, Sports & More – All in One Place">
+<meta property="og:description" content="Read amazing articles about countries, technology, sports, history, geography, and more. The Undertime presents it all in a simple, clear, and informative way.">
 <meta property="og:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
 <meta property="og:site_name" content="The Undertime">
 <meta property="og:locale" content="en_US">
 
+
 <!--Twitter Card-->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://the-undertime.netlify.app/article-explorer">
-<meta name="twitter:title" content="The Undertime | Explore Articles">
-<meta name="twitter:description" content="Find articles on world affairs, science, and sports — written for knowledge seekers, students, and curious minds.">
+<meta name="twitter:title" content="Amazing Articles on Countries, Tech, Sports & More – All in One Place">
+<meta name="twitter:description" content="Read amazing articles about countries, technology, sports, history, geography, and more. The Undertime presents it all in a simple, clear, and informative way.">
 <meta name="twitter:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
+
 	
 <!-- ====== Site Verification Placeholders ====== -->
 <meta name="google-site-verification" content="50uo9QYBNQpqKqfs9k2JSv6veTnDd7xm8Ew7MnmRQYU" />
@@ -118,67 +122,77 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
 <!-- ====== Social Profiles ====== -->
-<meta property="og:profile" content="https://www.facebook.com/profile.php?id=61576479780082">
-<link rel="me" href="https://www.reddit.com/user/subworldnews/">
-<link rel="me" href="https://www.youtube.com/@Clocknews-Sub">
-
-<!-- ====== Dublin Core Metadata ====== -->
-<meta name="DC.title" content="The Undertime | Explore Articles">
-<meta name="DC.creator" content="The Undertime">
-<meta name="DC.publisher" content="The Undertime">
-<meta name="DC.language" content="en">
-<meta name="DC.description" content="Articles covering world events, science and technology, sports, and more — crafted for curious minds and knowledge seekers.">
-<meta name="DC.date" content="2025-07-01">
+<meta property="og:profile" content="">
+<link rel="me" href="">
+<link rel="me" href="">
 
 <!--Schema markup-->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "The Undertime",
+  "@type": "CollectionPage",
+  "name": "Amazing Articles on Countries, Technology, Sports & More – All in One Place",
   "url": "https://the-undertime.netlify.app/article-explorer",
-  "logo": {
-  "@type": "ImageObject",
-  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
-},
-  "sameAs": [
-    "https://www.facebook.com/your-username",
-    "https://www.youtube.com/@yourchannel",
-    "https://www.reddit.com/user/yourusername"
-  ],
-  "description": "Whether you're curious about the world, science and technology, or sports, you'll find insightful articles on all these topics here — it's made for knowledge seekers, students, and curious minds.",
-  "foundingDate": "2025-07-01",
-  "email": "subworldnews@proton.me",
-  "address": {
-    "addressCountry": "Pakistan"
+  "description": "Discover amazing articles about countries, technology, sports, history, geography, and more. The Undertime makes knowledge simple, clear, and easy to explore.",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "The Undertime",
+    "url": "https://the-undertime.netlify.app"
   }
 }
 </script>
 
+<script>
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Undertime",
+      "item": "https://the-undertime.netlify.app"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://the-undertime.netlify.app/article-explorer"
+    }
+  ]
+}
+</script>
+
+<!-- ItemList schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "The Undertime -  Explore Article",
-  "url": "https://the-undertime.netlify.app/article-explorer",
-  "isPartOf": {
-    "@type": "EducationalOrganization",
-    "name": "The Undertime"
-  },
-  "description": "Whether you're curious about the world, science and technology, or sports, you'll find insightful articles on all these topics here — it's made for knowledge seekers, students, and curious minds.",
-  "inLanguage": "en",
- "primaryImageOfPage": {
-  "@type": "ImageObject",
-  "url": "https://the-undertime.netlify.app/the-undertime-logo.webp"
-},
-  "datePublished": "2025-07-01",
-  "potentialAction": {
-    "@type": "ReadAction",
-    "target": "https://the-undertime.netlify.app"
-  }
+  "@type": "ItemList",
+  "name": "Articles",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Article",
+        "headline": "World Affair",
+        "url": "https://the-undertime.netlify.app/article-explorer/world-affair"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Article",
+        "headline": "Hidden Facts About Palestine",
+        "url": "https://the-undertime.netlify.app/article-explorer/ai-revolution"
+      }
+    }
+    // Add more articles...
+  ]
 }
 </script>
-
 
 	
 <style>
@@ -451,7 +465,23 @@ figcaption,
   margin: 4px 0 0;
 }
 
+/* ----------------------- article link ----------------------- */
+.article-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 
+.article-link .article-meta,
+.article-link .article-summary {
+  font-weight: normal;
+  color: inherit;
+}
+
+.article-link:hover .article-container {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
 
   /* ----------------------- Ad Block ----------------------- */
   .ad-block {
@@ -742,7 +772,7 @@ body {
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="the-undertime-logo.webp" alt="The Undertime Logo">
+      <img src="the-undertime-logo.webp" alt="The Undertime Logo" loading="lazy">
     </div>
     <nav class="main-nav">
       <a href="index.html" class="nav-link">Home</a>
@@ -806,51 +836,94 @@ body {
     <a href="article-explorer.html">Article Explorer</a>
   </div>
   
-<!-- Article -->
 <!-- Article Previews -->
+<main>
+
+<!-- Article 1 -->
 <div id="articles-grid">
+<a href="article.html" class="article-link">
 <div class="article-preview" data-category="world" data-subcategory="india" data-date="2025-07-01">
-    <h3><a href="#"><strong>World Affairs</strong></a></h3>
-    <p><small><em>20 June 2025 | World</em></small></p>
-    <p>Asia's political changes in focus.</p>
+    <h3 data-aos="fade-up">economy of india</h3>
+    <p data-aos="zoom-in"><small><em>20 June 2025 | India | World</em></small></p>
+    <p data-aos="zoom-in">Asia's political changes in focus.</p>
   </div>
+</a>
 
+<!-- Article 2 -->
+  <a href="article.html" class="article-link">
   <div class="article-preview" data-category="science" data-subcategory="ai" data-date="2025-06-15">
-    <h3><a href="#"><strong>AI Revolution</strong></a></h3>
-    <p><small><em>15 June 2025 | Science</em></small></p>
-    <p>AI is transforming industries globally.</p>
+    <h3 data-aos="fade-up">AI Revolution</h3>
+    <p data-aos="zoom-in"><small><em>15 June 2025 | Science</em></small></p>
+    <p data-aos="zoom-in">AI is transforming industries globally.</p>
   </div>
+  </a>
 
-<!-- 🔴 Ad Block Here -->
-  <div class="ad-block">
-    <p>Advertisement</p>
-    <img src="https://dummyimage.com/728x90/cccccc/000000&text=Your+Ad+Here" alt="Ad" style="width:100%;">
+<!-- Article 3 -->
+  <a href="article.html" class="article-link">
+  <div class="article-preview" data-category="sports" data-subcategory="tennis" data-date="2025-08-15">
+    <h3 data-aos="fade-up">rules of tennis</h3>
+    <p data-aos="zoom-in"><small><em>15 June 2025 | Science</em></small></p>
+    <p data-aos="zoom-in">AI is transforming industries globally.</p>
   </div>
+</a>
+
+
 
   <!-- More articles... -->
 </div>
 
+<!-- 🔴 Ad Block Here -->
+  <div class="ad-block">
+    <p>Advertisement</p>
+    <img src="https://dummyimage.com/728x90/cccccc/000000&text=Your+Ad+Here" alt="Ad" style="width:100%;" loading="lazy">
+  </div>
+  
+<div id="articles-grid">
+  
+  <!-- Article 1 -->
+<a href="article.html" class="article-link">
+<div class="article-preview" data-category="world" data-subcategory="india" data-date="2025-07-01">
+    <h3 data-aos="fade-up">economy of india</h3>
+    <p data-aos="zoom-in"><small><em>20 June 2025 | India | World</em></small></p>
+    <p data-aos="zoom-in">Asia's political changes in focus.</p>
+  </div>
+</a>
+
+<!-- Article 3 -->
+  <a href="article.html" class="article-link">
+  <div class="article-preview" data-category="scince" data-subcategory="robots" data-date="2025-08-15">
+    <h3 data-aos="fade-up">Intelligent Robots</h3>
+    <p data-aos="zoom-in"><small><em>15 June 2025 | Science</em></small></p>
+    <p data-aos="zoom-in">AI is transforming industries globally.</p>
+  </div>
+</a>
+
+</div>  
+  
+
+
+</main>  
 <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div class="footer-section">
-        <h3><strong>About The Undertime</strong></h3>
+        <h3>About The Undertime</h3>
         <p><a href="about.html" target="_blank">About</a></p>
         <p><a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a></p>
         <p><a href="disclaimer.html" target="_blank">Disclaimer</a></p>
       </div>
 
       <div class="footer-section">
-        <h3><strong>Contact Info</strong></h3>
+        <h3>Contact Info</h3>
         <p><a href="contact.html" target="_blank">Contact Undertime</a></p>
         <p><a href="advertise.html" target="_blank">Advertise with Undertime</a></p>
       </div>
 
       <div class="footer-section">
-        <h3><strong>Social Media</strong></h3>
-        <p><a href="https://www.youtube.com/@Clocknews-Sub" target="_blank">YouTube</a></p>
-        <p><a href="https://www.facebook.com/profile.php?id=61576479780082" target="_blank">Facebook</a></p>
-        <p><a href="https://www.reddit.com/user/subworldnews/" target="_blank">Reddit</a></p>
+        <h3>Social Media</h3>
+        <p><a href="" target="_blank">YouTube</a></p>
+        <p><a href="" target="_blank">Facebook</a></p>
+        <p><a href="" target="_blank">Reddit</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -1046,7 +1119,11 @@ document.addEventListener('click', function (event) {
   };
 </script>
 
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init(); // initialize AOS
+</script>
 
 </body>
 </html>
-
