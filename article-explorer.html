@@ -568,20 +568,54 @@ figcaption,
     }
 
     .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #ffffff;
-      border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 6px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      z-index: 1000;
-      width: 200px;
-      margin-top: 5px;
-    }
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  width: 220px;
+  margin-top: 5px;
+}
 
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: relative; /* 📱 Allow stacking in vertical layout */
+    width: 100%;        /* 📱 Fill container width */
+    border: 1px solid #ccc;
+    box-shadow: none;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .filter-wrapper {
+    width: 100%;
+  }
+
+  .category-btn {
+    width: 100%;
+    text-align: left;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-wrapper {
+    width: 100%;
+  }
+}
+
+	
     .article-preview {
       border: 1px solid #ddd;
       padding: 10px;
@@ -1127,5 +1161,6 @@ document.addEventListener('click', function (event) {
 
 </body>
 </html>
+
 
 
