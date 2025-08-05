@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Privacy Policy | The Undertime</title>
+
+<!--Favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!--Cookies-->
+<link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
+<script src="silktide-consent-manager.js"></script>
+<script>
+silktideCookieBannerManager.updateCookieBannerConfig({
+  background: {
+    showBackground: false
+  },
+  cookieIcon: {
+    position: "bottomLeft"
+  },
+  cookieTypes: [
+    {
+      id: "necessary",
+      name: "Necessary",
+      description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+      required: true,
+      onAccept: function() {
+        console.log('Add logic for the required Necessary here');
+      }
+    },
+    {
+      id: "analytical",
+      name: "Analytical",
+      description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+      required: false,
+      onAccept: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+        });
+        dataLayer.push({
+          'event': 'consent_accepted_analytical',
+        });
+      },
+      onReject: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+        });
+      }
+    }
+  ],
+  text: {
+    banner: {
+      description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+      acceptAllButtonText: "Accept all",
+      acceptAllButtonAccessibleLabel: "Accept all cookies",
+      rejectNonEssentialButtonText: "Reject non-essential",
+      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+      preferencesButtonText: "Preferences",
+      preferencesButtonAccessibleLabel: "Toggle preferences"
+    },
+    preferences: {
+      title: "Customize your cookie preferences",
+      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+      creditLinkText: "Get this banner for free",
+      creditLinkAccessibleLabel: "Get this banner for free"
+    }
+  },
+  position: {
+    banner: "bottomLeft"
+  }
+});
+</script>
+
+<!--meta tags-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="The Undertime | Dislcaimer">
+<meta name="description" content="Learn how The Undertime collects, uses, and protects your data, including details on cookies, Google Analytics, and your privacy rights under Pakistani law.">
+<meta name="author" content="The Undertime">
+<meta name="robots" content="noindex, follow" />
+
+<!--Open graph-->
+<meta property="og:type" content="website>
+<meta property="og:url" content="https://the-undertime.netlify.app/privacy">
+<meta property="og:title" content="The Undertime | Disclaimer">
+<meta property="og:description" content="Understand how The Undertime handles your data, uses cookies and analytics, and protects your privacy under Pakistani law.">
+<meta property="og:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
+<meta property="og:site_name" content="The Undertime">
+<meta property="og:locale" content="en_US"> 
+
+<!--Twitter Card-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://the-undertime.netlify.app/privacy">
+<meta name="twitter:title" content="The Undertime | Disclaimer">
+<meta name="twitter:description" content="Understand how The Undertime handles your data, uses cookies and analytics, and protects your privacy under Pakistani law.">
+<meta name="twitter:image" content="https://the-undertime.netlify.app/the-undertime-social-cover.png">
+
+<!-- ====== Cannonical ====== -->
+<link rel="canonical" href="https://the-undertime.netlify.app/privacy">
+
+<!-- ====== Site Verification Placeholders ====== -->
+<meta name="google-site-verification" content="50uo9QYBNQpqKqfs9k2JSv6veTnDd7xm8Ew7MnmRQYU" />
+<meta name="msvalidate.01" content="PLACEHOLDER_BING_CODE">
+<meta name="p:domain_verify" content="PLACEHOLDER_PINTEREST_CODE">
+
+<!-- ====== PWA / App-Like Behavior ====== -->
+<meta name="theme-color" content="#1a73e8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="U Disclaimer">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- ====== Social Profiles ====== -->
+<meta property="og:profile" content="">
+<link rel="me" href="">
+<link rel="me" href="">
+
+
+<!--Schema markup-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Privacy Policy | The Undertime",
+  "url": "https://the-undertime.netlify.app/privacy",
+  "description": "Understand how The Undertime handles your data, uses cookies and analytics, and protects your privacy under Pakistani law.",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "The Undertime",
+    "url": "https://the-undertime.netlify.app"
+  }
+}
+</script>
+
+<style>
+/* ----------------------- Font Faces (Assuming Local Fonts) ----------------------- */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat.bold.ttf') format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Petrona';
+  src: url('fonts/petrona.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nimbus Roman No9 L';
+  src: url('fonts/NimbusRomNo9L-Reg.otf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+/* ----------------------- Global Styles ----------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 19px;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+/* Content Container */
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #023020;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  margin: 30px 0 15px 0;
+  color: #023020;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ol, ul {
+  margin-left: 20px;
+  font-family: 'Petrona', serif;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #023020;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2.5px;
+  background-color: #023020;
+  transition: width 0.4s ease;
+}
+
+a:hover::after {
+  width: 100%;
+  background-color: #6495ED;
+}
+
+/* ----------------------- Navbar ----------------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-bottom: 3px solid #F5F5F5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo img {
+  height: 50px;
+  width: 160px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #023020;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link:hover {
+  background-color: #F5F5DC;
+  color: #023020;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #023020;
+}
+
+/* ----------------------- Side Menu ----------------------- */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -3px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1100;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.side-menu a {
+  display: block;
+  width: 100%;
+  color: #023020;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 2.5px solid #FAEBD7;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.side-menu a:hover {
+  background-color: #dff0e0;
+  color: #023020;
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #023020;
+  margin-bottom: 20px;
+}
+
+/* ----------------------- Footer ----------------------- */
+footer {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 40px 20px 20px 20px;
+  border-top: 1px solid #ddd;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+/* Footer Headings */
+.footer-section h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #023020;
+}
+
+.footer-section p,
+.footer-section a {
+  line-height: 1.6;
+  font-family: 'Montserrat', serif;
+}
+
+footer,
+footer .footer-section a,
+footer .footer-section p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-bottom p {
+  font-family: 'Nimbus Roman No9 L', serif;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  font-family: 'Nimbus Roman No9 L', serif;
+}
+
+footer a {
+  color: #023020;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #005a2b;
+}
+</style>
+
+</head>
+<body>
+
+ <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="the-undertime-logo.webp" alt="The Undertime Logo" loading="lazy">
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">&#9776;</button>
+    </nav>
+  </header>
+  
+  <!-- Slide-out Menu -->
+  <div class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close Menu">&times;</button>
+    <a href="science-and-technology.html">Science & Technology</a>
+    <a href="sports.html">Sports</a>
+    <a href="article-explorer.html">Article Explorer</a>
+  </div>
+  
+  <main>
+
+<div class="container">
+
+<h1>Privacy Policy</h1>
+<p>At <b>The Undertime</b>, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website.
+
+<h2>1. Who We Are</h2>
+<p>Undertime is an independently run website managed by a single individual based in Pakistan. The site publishes informational content on world affairs, science, history, and sports.</p>
+	
+<h2>2. What Information We Collect</h2>
+<p>We do <b>not collect personally identifiable information (PII)</b> unless you voluntarily provide it (e.g., via a contact form). However, we may automatically collect certain non-personal information through cookies and analytics tools, including:</p>	
+
+<ul>
+<li>Device type and browser</li>	
+<li>Pages visited and time spent</li>	
+<li>Referring websites</li>	
+<li>General location data (e.g., country)</li>	
+</ul>	
+
+<h2>3. Use of Google Analytics</h2>	
+<p>We use <b>Google Analytics</b> to understand how visitors use our website. This helps us improve content, layout, and performance.</p>	
+  
+<p>Google Analytics may collect:</p>  
+  
+<ul>
+<li>IP address (anonymized)</li>  
+<li>Device and browser type</li>  
+<li>Time spent on pages</li>  
+<li>Click behavior and navigation flow</li>  
+</ul>  
+  
+<p>Google Analytics does <b>not collect personal data like your name, email, or contact details</b>.</p>  
+  
+<p>To learn more, see Google’s <a href="https://policies.google.com/privacy" target="_blank">policies</a></p>  
+  
+<h2>4. Cookies and Consent</h2>
+
+<p>We use cookies to:</p>
+
+<ul>
+<li>Ensure the website functions properly (necessary cookies)</li>
+<li>Analyze site traffic (analytical cookies via Google Analytics)</li>
+</ul>
+
+<p>We manage cookie preferences using the <b>Silktide Cookie Consent Banner</b>, which gives you control over which cookies you accept.</p>
+
+<h3>Cookie Categories:</h3>
+
+ <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">Type</th>
+      <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd;">Necessary</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">
+        Essential for the website to function. Cannot be disabled.
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ddd;">Analytical</td>
+      <td style="padding: 10px; border: 1px solid #ddd;">
+        Help us understand user behavior to improve the site. Optional.
+      </td>
+    </tr>
+  </tbody>
+</table>
+ 
+<h2>5. How We Store and Protect Data</h2>  
+<p>We do not store any personally identifiable information on our servers. Non-personal data collected via cookies is processed and stored securely by Google under their privacy practices.</p>  
+  
+<h2>6. Data Sharing</h2>  
+<p>We do not sell, rent, or share your personal data with third parties. The only third-party data processors we use are:</p>  
+  
+<ul>
+<li><b>Google Analytics</b> (analytics)</li>  
+<li><b>Silktide</b> (cookie consent)</li>  
+</ul>  
+
+<p>Both comply with international privacy standards (GDPR, etc.).</p>  
+  
+<h2>7. Your Rights</h2>  
+<p>Depending on your region, you may have the right to:</p>  
+
+<ul>
+<li>Access the data we collect about you</li> 
+<li>Request correction or deletion</li> 
+<li>Withdraw cookie consent at any time</li> 
+</ul>  
+  
+<p>To make a request, contact us via the <a href="contact.html" target="_blank">Contact</a> page.</p>  
+  
+<h2>8. Legal Compliance</h2>  
+<p>We comply with applicable privacy and data protection laws in Pakistan and globally, including:</p>  
+
+<ul>
+<li><b>Electronic Transactions Ordinance, 2002</b></li>
+<li><b>Prevention of Electronic Crimes Act (PECA), 2016</b></li>
+<li>Best practices under <b>GDPR and Google’s consent guidelines</b></li>
+</ul>  
+  
+<h2>9. Changes to This Policy</h2>  
+  <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated "Effective Date." Continued use of the site implies acceptance of any revised policy.</p>
+  
+<h2>10. Contact</h2>  
+ <p>If you have questions about this Privacy Policy or your data, please reach out via the <a href="contact.html" target="_blank">Contact</a> page.</p> 
+  
+  
+  </div>
+ </main>
+ 
+ <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About The Undertime</h3>
+        <p><a href="about.html" target="_blank">About</a></p>
+        <p><a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a></p>
+        <p><a href="privacy.html" target="_blank">Privacy Policy</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p><a href="contact.html" target="_blank">Contact Undertime</a></p>
+        <p><a href="advertise.html" target="_blank">Advertise with Undertime</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <p><a href="https://www.youtube.com/@Clocknews-Sub" target="_blank">YouTube</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=61576479780082" target="_blank">Facebook</a></p>
+        <p><a href="https://www.reddit.com/user/subworldnews/" target="_blank">Reddit</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 The Undertime. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript for Slide-out Menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const closeMenu = document.getElementById('closeMenu');
+    const sideMenu = document.getElementById('sideMenu');
+
+    menuToggle.addEventListener('click', () => {
+      sideMenu.style.right = '0';
+    });
+
+    closeMenu.addEventListener('click', () => {
+      sideMenu.style.right = '-260px';
+    });
+
+    window.addEventListener('click', function (e) {
+  if (!sideMenu.contains(e.target) && e.target !== menuToggle) {
+    sideMenu.style.right = '-260px';
+  }
+});
+  </script>
+  </body>
+  </html>
