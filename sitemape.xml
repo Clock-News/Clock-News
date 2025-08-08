@@ -1,29 +1,49 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://the-undertime.netlify.app</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://the-undertime.netlify.app/science-and-technology</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://the-undertime.netlify.app/sports</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://the-undertime.netlify.app/article-explorer</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://the-undertime.netlify.app/about</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://the-undertime.netlify.app/terms-and-conditions</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://the-undertime.netlify.app/privacy</loc>
+    <priority>0.6</priority>
+  </url>
+
 <url>
-	<loc>https://the-undertime.netlify.app/</loc>
-	<lastmod>2025-08-08T10:21:46+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+    <loc>https://the-undertime.netlify.app/credit</loc>
+    <priority>0.6</priority>
+  </url>
+
 <url>
-	<loc>https://the-undertime.netlify.app/science-and-technology</loc>
-	<lastmod>2025-08-08T10:21:46+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://the-undertime.netlify.app/sports</loc>
-	<lastmod>2025-08-08T10:21:46+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://the-undertime.netlify.app/article-explorer</loc>
-	<lastmod>2025-08-08T10:21:46+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://the-undertime.netlify.app/about</loc>
-	<lastmod>2025-08-08T10:21:46+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+    <loc>https://the-undertime.netlify.app/contact</loc>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
