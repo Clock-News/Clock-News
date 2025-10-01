@@ -1,1 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>What is the importance of water?</title>
+
+<!--Favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!--Cookies-->
+<link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
+<script src="silktide-consent-manager.js"></script>
+<script>
+silktideCookieBannerManager.updateCookieBannerConfig({
+  background: {
+    showBackground: false
+  },
+  cookieIcon: {
+    position: "bottomLeft"
+  },
+  cookieTypes: [
+    {
+      id: "necessary",
+      name: "Necessary",
+      description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+      required: true,
+      onAccept: function() {
+        console.log('Add logic for the required Necessary here');
+      }
+    },
+    {
+      id: "analytical",
+      name: "Analytical",
+      description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+      required: false,
+      onAccept: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+        });
+        dataLayer.push({
+          'event': 'consent_accepted_analytical',
+        });
+      },
+      onReject: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+        });
+      }
+    }
+  ],
+  text: {
+    banner: {
+      description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+      acceptAllButtonText: "Accept all",
+      acceptAllButtonAccessibleLabel: "Accept all cookies",
+      rejectNonEssentialButtonText: "Reject non-essential",
+      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+      preferencesButtonText: "Preferences",
+      preferencesButtonAccessibleLabel: "Toggle preferences"
+    },
+    preferences: {
+      title: "Customize your cookie preferences",
+      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+      creditLinkText: "Get this banner for free",
+      creditLinkAccessibleLabel: "Get this banner for free"
+    }
+  },
+  position: {
+    banner: "bottomLeft"
+  }
+});
+</script>
+
+<!--meta tags-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="What is the importance of water?">
+<meta name="description" content="It plays a role in almost every part of the body, prevents many diseases, and keeps us active and fresh. In worldly terms, it means safety, progress, and a better future.">
+<meta name="author" content="The Undertime">
+<meta name="robots" content="noindex, follow" />
+
+<!--Open graph-->
+<meta property="og:type" content="website>
+<meta property="og:url" content="https://the-undertime.netlify.app/science-and-technology/articles-2025/What-is-the-importance-of-water.html">
+<meta property="og:title" content="Importance of Water">
+<meta property="og:description" content="Water is a great blessing. It plays a role in almost every part of the body, prevents many diseases, and keeps us active and fresh. In worldly terms, it means safety, progress, and a better future.">
+<meta property="og:image" content="https://the-undertime.netlify.app/article-images/water-drop.webp">
+<meta property="og:site_name" content="The Undertime">
+<meta property="og:locale" content="en_US">
+
+<!--Twitter Card-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://the-undertime.netlify.app/science-and-technology/articles-2025/What-is-the-importance-of-water.html">
+<meta name="twitter:title" content="Importance of water>
+<meta name="twitter:description" content="Water is a great blessing. It plays a role in almost every part of the body, prevents many diseases, and keeps us active and fresh. In worldly terms, it means safety, progress, and a better future.">
+<meta name="twitter:image" content="https://the-undertime.netlify.app/article-images/Shallow-Focus-of-a-Glass-of-Water-on-Wooden-Surface.webp">
+
+<!-- ====== Cannonical ====== -->
+<link rel="canonical" href="https://the-undertime.netlify.app/science-and-technology/articles-2025/What-is-the-importance-of-water.html">
+
+<!-- ====== Site Verification Placeholders ====== -->
+<meta name="google-site-verification" content="50uo9QYBNQpqKqfs9k2JSv6veTnDd7xm8Ew7MnmRQYU" />
+<meta name="msvalidate.01" content="PLACEHOLDER_BING_CODE">
+<meta name="p:domain_verify" content="PLACEHOLDER_PINTEREST_CODE">
+
+<!-- ====== PWA / App-Like Behavior ====== -->
+<meta name="theme-color" content="#1a73e8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="What is the importance of water">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- Basic Dublin Core -->
+<meta name="DC.Title" content="What is the importance of water">
+<meta name="DC.Creator" content="The Undertime">
+<meta name="DC.Publisher" content="The Undertime">
+<meta name="DC.Description" content="It plays a role in almost every part of the body, prevents many diseases, and keeps us active and fresh.">
+<meta name="DC.Date" content="2025-1o-1">
+<meta name="DC.Language" content="en">
+<meta name="DC.Identifier" content="https://the-undertime.netlify.app/science-and-technology/articles-2025/What-is-the-importance-of-water.html">
+<meta name="DC.Type" content="Text">
+
+<!--Schema markup-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What is the importance of water",
+  "description": "It plays a role in almost every part of the body, prevents many diseases, and keeps us active and fresh.",
+  "image": "https://the-undertime.netlify.app/article-images/Shallow-Focus-of-a-Glass-of-Water-on-Wooden-Surface.webp",
+  "author": {
+    "@type": "Person",
+    "name": "Hasnain Abdul Rehman"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Hasnain Abdul Rehman"
+  },
+  "datePublished": "2025-10-1",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://the-undertime.netlify.app/science-and-technology/articles-2025/What-is-the-importance-of-water.html"
+  },
+  "isAccessibleForFree": true
+}
+</script>
+
+
+
+
+
+<!-- Combined CSS -->
+  <style>
+  /* ----------------------- Font Faces (Assuming Local Fonts) ----------------------- */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat.bold.ttf') format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Petrona';
+  src: url('fonts/petrona.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nimbus Roman No9 L';
+  src: url('fonts/NimbusRomNo9L-Reg.otf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+  
+    /* ----------------------- Global Reset ----------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Petrona', serif;
+  font-size: 19px;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+  color: #023020;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+/* Content Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.container p {
+  margin-bottom: 16px;
+}
+
+.container ul {
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.container li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+a {
+  color: #023020;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2.5px;
+  background-color: #023020;
+  transition: width 0.4s ease;
+}
+
+a:hover::after {
+  width: 100%;
+  background-color: #6495ED;
+}
+
+.article-wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: Georgia, 'Nimbus Roman No9 L', serif;
+  font-size: 20px;
+  line-height: 1.85;
+  color: #242424;
+}
+
+.article-wrapper h1 {
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 25px;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.article-wrapper p {
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.85;
+}
+
+.article-wrapper p:first-of-type {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.9;
+}
+
+/* Optional Drop Cap — uncomment if you want it */
+/*
+.article-wrapper p:first-of-type::first-letter {
+  float: left;
+  font-size: 3.4em;
+  line-height: 1;
+  padding-right: 6px;
+  font-weight: bold;
+  color: #444;
+}
+*/
+
+.article-image {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.article-image figcaption {
+  font-size: 15px;
+  color: #888;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.ad-box {
+  margin: 50px 0;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px dashed #ccc;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.ad-box p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.ad-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* Navigation */
+.navbar,
+.navbar a,
+.nav-link,
+.side-menu,
+.side-menu a,
+footer a,
+footer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+    /* ----------------------- Navbar ----------------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-bottom: 3px solid #F5F5F5;
+}
+
+.logo img {
+  height: 50px;
+  width: 160px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #023020;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #F5F5DC;
+  color: #023020;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #023020;
+}
+
+/* ----------------------- Side Menu ----------------------- */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -3px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1100;
+}
+
+.side-menu a {
+  display: block;
+  width: 100%;
+  color: #023020;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 2.5px solid #FAEBD7;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.side-menu a:hover {
+  background-color: #dff0e0;
+  color: #023020;
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #023020;
+  margin-bottom: 20px;
+}
+
+/* ----------------------- Footer ----------------------- */
+footer {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 40px 20px 20px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+/* Footer headings */
+.footer-section h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.footer-section p,
+.footer-section a {
+  line-height: 2.5;  /* Increased line height for content */
+}
+
+/* Small text and legal disclaimers */
+.footer-bottom,
+.container small {
+  font-family: 'Nimbus Roman No9 L', serif;
+  font-size: 14px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #777;
+}
+
+footer a {
+  color: #023020;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #005a2b;
+}
+
+@media (min-width: 768px) {
+  .article-wrapper {
+    margin: 10px auto;/* Restore center alignment for tablets and larger */
+  }
+}
+
+
+</style>
+
+<!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="the-undertime-logo.webp" alt="The Undertime Logo" loading="lazy">
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">&#9776;</button>
+    </nav>
+  </header>
+  
+  <!-- Slide-out Menu -->
+  <div class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeMenu" aria-label="Close Menu">&times;</button>
+    <a href="science-and-technology.html">Science & Technology</a>
+    <a href="sports.html">Sports</a>
+    <a href="article-explorer.html">Article Explorer</a>
+  </div>
+  
+<main>
+  <article class="article-wrapper">
+    <h1>What is the importance of water?</h1>
+    
+    <p>Water is a great blessing. Without it, we cannot even stay alive. Our body mostly depends on water. 
+	It helps us breathe, digest food, move our muscles, and even think clearly — in other words, it plays an important role.</p>
+
+ <figure class="article-image">
+    <img src="article-images/Shallow-Focus-of-a-Glass-of-Water-on-Wooden-Surface.webp" alt="Shallow Focus of a Glass of Water on Wooden Surface" style="width: 500px; max-width: 100%; height: 280px; display: block; margin: 20px auto;" loading="lazy">
+    <figcaption>Photo by MART  PRODUCTION from Pexels</figcaption>
+  </figure>
+
+  <h2>How does water play an important role in our bodies?</h2>
+	
+	<p>Water makes up more than half of our body weight. 
+	Its amount can vary slightly depending on age, gender, and body structure, for example:</p>
+<ul>
+<li>In babies, about 70–78% of the body is water.</li>
+<li>In adult women, usually about 50–55% of the body is water, due to body fat.</li>
+<li>In adult men, about 60–65% of the body is water, because they usually have more muscles, which contain more water.</li>
+<li>In elderly people, water naturally decreases with age, so many older people have less than 50% water in their bodies.</li>
+</ul>
+
+<div class="ad-box">
+    <p></p>
+    <img src="" alt="Advertisement">
+  </div>
+  
+<p>Almost every process needs water. It keeps joints soft, protects organs, forms saliva, and carries oxygen and food through the blood. 
+It also removes waste, controls body temperature, and when water is low, we may feel tired, dizzy, or weak.
+</p>
+
+<h2>Is feeling thirsty a sign of water shortage?</h2>
+
+<p>Yes! Feeling thirsty is a sign of water shortage. Thirst happens when the body has mild dehydration, the sodium (salt) level in the blood rises, or the mouth becomes dry. 
+At that time, a part of the brain called the hypothalamus tells us that we need to drink water.</p>
+
+<p>Our water needs change depending on our situation — like weather, exercise, pregnancy, or illness. 
+We can also get water from fruits and vegetables, but plain water is more useful for good health.</p>
+  
+<h2>What benefits do we get from drinking water?</h2>
+
+<p>Water keeps digestion smooth. It helps spread nutrients in the body and gives it energy.
+ It protects the kidneys, lowers the chances of stones, prevents constipation, and controls blood pressure. 
+ It also removes toxins, improves memory, and keeps the skin fresh. But drinking too much water can also be harmful to health.
+</p>
+
+<h2>Can drinking too much water be harmful to our health?</h2>
+
+<p>Yes! Even though it is rare and usually doesn’t happen, but drinking too much water in a short time can lower the salt level in the blood.
+ This may cause headache, weakness, or confusion, and in some cases, it can even be dangerous. 
+ This problem mostly happens to athletes who sweat a lot and drink too much water at once.
+ But for normal people, drinking more water is usually not a problem — in fact, most people suffer more from a shortage of water.</p>  
+  
+  
+<h2>How to maintain water intake throughout the day?</h2>
+
+<p>The best way is to drink water regularly — before exercise, during exercise, after it, with meals, while traveling, after coming back from travel, and whenever you feel thirsty. 
+
+<figure class="article-image">
+    <img src="article-images/Tired-sportsman-man-drinking-water-during-training-on-street.webp" alt="tired sportsman drinking water" style="width: 500px; max-width: 100%; height: 300px; display: block; margin: 20px auto;" loading="lazy">
+    <figcaption>Photo by Andrea Piacquadio from Pexels</figcaption>
+  </figure>
+
+Drinking plain water instead of soft drinks is better for health. 
+Sports drinks are only for those who do heavy exercise. For normal people, plain water is enough. 
+Vegetables and fruits also contain water, and using them is healthy too, but plain water is the best choice to keep the body hydrated throughout the day.</p>  
+  
+<h2>How should water be drunk?</h2>  
+
+
+  <p>The best way to drink water that is very useful for health: drink while sitting, and in three breaths (meaning pausing in between). This way is medically very beneficial.</p>
+
+<figure class="article-image">
+    <img src="article-images/Person-Holding-Drinking-Glass.webp" alt="person holding drinking glass" style="width: 500px; max-width: 100%; height: 300px; display: block; margin: 20px auto;" loading="Lazy">
+    <figcaption>Photo by Lisa from Pexels from Pexels</figcaption>
+  </figure>
+  
+  <p>When a person drinks water while sitting, it slowly absorbs into the body, the kidneys filter it better, and it does not put pressure on the body. Similarly, when a person drinks water in three breaths, it does not burden the heart, brain, and digestive system, and water gets digested easily.</p>
+  
+  <p>This beautiful, balanced, and health-giving way was taught to us by the personality whom the world still remembers as a model of high character, kindness, and wisdom — Muhammad (peace be upon him). \
+  Muhammad (peace be upon him) is not only the last Prophet of Muslims but also one of history’s greatest leaders, who gave humanity a practical example of living a pure life. 
+  His Sunnah (way of life) guides both the soul and the body toward goodness.</p>
+  
+ <p>Science also confirms the Sunnah of Muhammad (peace be upon him) about drinking water. Trusted scientific organizations like the National Library of Harvard and Health Publishing Medicine say that drinking water slowly, with breathing, and while sitting is better for digestion, kidneys, and heart, while drinking water standing or too quickly can sometimes be harmful.</p> 
+  
+  <h2>Why has clean water become a global problem?</h2>
+  
+  <p>Even today, many people in the world do not have clean water. Because of dirty water, people suffer from diseases like cholera, typhoid, and diarrhea, which cause millions of deaths every year, including children. Dirty water also contains dangerous chemicals like arsenic and lead.</p> 
+  <figure class="article-image">
+    <img src="article-images/Body-Of-Water.webp" alt="Body of water" style="width: 500px; max-width: 100%; height: 300px; display: block; margin: 20px auto;" loading="lazy">
+    <figcaption>Photo by Yogendra  Singh from Pexels</figcaption>
+  </figure>
+  
+  <p>The United Nations has said that clean water is a basic human right, but climate change and population growth are making the shortage of safe water worse.</p>
+  
+  <p>Water is a great blessing. It plays a role in almost every part of the body, prevents many diseases, and keeps us active and fresh. In worldly terms, it means safety, progress, and a better future. Drinking clean water — and using it wisely — is a responsibility that applies to all of us. Respecting water means respecting our health and our lives.</p>
+  
+  
+  
+  </article>
+  
+
+<!-- References Section -->
+<section class="references">
+  <h2>Source of Information</h2>
+  <ol>
+    <li><a href="https://health.ucdavis.edu/blog/good-food/why-its-important-for-you-to-drink-water-and-stay-hydrated/2022/07" target="_blank">UC Davis Health</a></li>
+    <li><a href="https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256" target="_blank">Mayo Clinic</a></li>
+    <li><a href="https://www.healthline.com/health/food-nutrition/why-is-water-important" target="_blank">Healthline</a></li>
+    <li><a href="https://www.medicalnewstoday.com/articles/290814" target="_blank">Medical News Today</a></li>
+    <li><a href="https://www.who.int/news-room/fact-sheets/detail/drinking-water" target="_blank">(WHO) World Health Organization</a></li>
+    <li><a href="https://health.medicaldialogues.in/fact-check/kidney-health-fact-check/fact-check-can-drinking-water-while-standing-lead-to-kidney-damage-136675" target="_blank">Health Dialogues</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/35646197/" target="_blank">National Library of medicine</a></li>
+    
+  </ol>
+</section>
+
+<style>
+.references {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f9f9f9;  /* light background */
+  border-radius: 8px;
+}
+
+.references h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.references ol {
+  padding-left: 20px;
+}
+
+.references li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.references a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
+</style>
+
+
+
+</main>
+  
+  
+  
+ <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About The Undertime</h3>
+        <p><a href="about.html" target="_blank">About</a></p>
+        <p><a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a></p>
+        <p><a href="privacy.html" target="_blank">Privacy Policy</a></p>
+	      <p><a href="credit.html" target="_blank">Credits</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3><strong>Contact Info</strong></h3>
+        <p><a href="contact.html" target="_blank">Contact Undertime</a></p>
+        <p><a href="advertise.html" target="_blank">Advertise with Undertime</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3><strong>Social Media</strong></h3>
+        <p><a href="https://www.reddit.com/user/The_Undertime" target="_blank">Reddit</a></p>
+        <p><a href="https://undertime.bearblog.dev" target="_blank">Bear Blog</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 The Undertime. All rights reserved.
+    </div>
+  </footer>
+
+<!-- JavaScript for Side Menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const closeMenu = document.getElementById('closeMenu');
+    const sideMenu = document.getElementById('sideMenu');
+
+    menuToggle.addEventListener('click', () => {
+      sideMenu.style.right = '0';
+    });
+
+    closeMenu.addEventListener('click', () => {
+      sideMenu.style.right = '-300px';
+    });
+
+    window.addEventListener('click', function (e) {
+      if (!sideMenu.contains(e.target) && e.target !== menuToggle) {
+        sideMenu.style.right = '-300px';
+      }
+    });
+  </script>
+</body>
+</html>  
 
