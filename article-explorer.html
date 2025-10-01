@@ -874,11 +874,11 @@ body {
 
 <!-- Article 1 -->
 <div id="articles-grid">
-<a href="Articles/2025/August/2025-08-04-Moon.html" class="article-link">
-<div class="article-preview" data-category="science" data-subcategory="space" data-date="2025-08-04">
-    <h3 data-aos="fade-up">Paragraph About Moon</h3>
-    <p data-aos="zoom-in"><small><em>2 August 2025 | Science</em></small></p>
-    <p data-aos="zoom-in">The Moon, Earth’s only natural satellite, has fascinated humanity for....</p>
+<a href="articles-2025/What-is-the-importance-of-water.html" class="article-link">
+<div class="article-preview" data-category="science" data-subcategory="health" data-date="2025-08-04">
+    <h3 data-aos="fade-up">What is the importance of water?</h3>
+    <p data-aos="zoom-in"><small><em>1 October 2025 | Science</em></small></p>
+    <p data-aos="zoom-in">Water is a great blessing. Without it, we cannot even stay alive. Our body mostly.....</p>
   </div>
 </a>
 
@@ -1041,6 +1041,7 @@ function updateSubCategories(category) {
     container.innerHTML = `
       <label><input type="checkbox" name="subCategory" value="ai" onchange="selectSubCategory()"> AI</label><br>
       <label><input type="checkbox" name="subCategory" value="space" onchange="selectSubCategory()"> Space</label>
+	  <label><input type="checkbox" name="subCategory" value="health" onchange="selectSubCategory()"> Health</label>
     `;
   } else if (category === "sports") {
     container.innerHTML = `
@@ -1162,6 +1163,7 @@ document.addEventListener('click', function (event) {
 
 </body>
 </html>
+
 
 
 
