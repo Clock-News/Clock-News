@@ -700,17 +700,18 @@ body {
   }
 }
 
-/* ===== Fix article visibility ===== */
+/* ===== FIXED visibility handling ===== */
 .article-preview {
   display: block;
-  transition: all 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
-/* hidden class used by filter script */
-.hidden {
+.article-preview.hidden {
   display: none !important;
-  opacity: 0;
-  visibility: hidden;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 	
@@ -1062,6 +1063,7 @@ document.addEventListener('click', function (event) {
 
 </body>
 </html>
+
 
 
 
