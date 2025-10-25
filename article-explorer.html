@@ -1012,6 +1012,17 @@ document.addEventListener('click', function (event) {
     document.querySelectorAll('.dropdown-content').forEach(drop => drop.style.display = 'none');
   }
 });
+
+	 // Add this at the end of your existing filterArticles() function
+document.querySelectorAll('.article-link').forEach(link => {
+  const article = link.querySelector('.article-preview');
+  if (article && article.classList.contains('hidden')) {
+    link.style.display = 'none';
+  } else {
+    link.style.display = 'block';
+  }
+});
+	 
 </script>
 
 
@@ -1042,6 +1053,7 @@ document.addEventListener('click', function (event) {
 
 </body>
 </html>
+
 
 
 
