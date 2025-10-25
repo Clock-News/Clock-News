@@ -1097,7 +1097,7 @@ function filterArticles() {
   show = false;
 }
 
-    article.style.display = show ? '' : 'none';
+    article.style.display = show ? 'block' : 'none';
   });
 function fuzzyMatch(input, text) {
   const pattern = input.split('').map(char => `.*${char}`).join('');
@@ -1163,6 +1163,7 @@ document.addEventListener('click', function (event) {
 
 </body>
 </html>
+
 
 
 
