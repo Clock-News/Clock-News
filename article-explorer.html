@@ -699,6 +699,21 @@ body {
     font-size: 14px;
   }
 }
+
+/* ===== Fix article visibility ===== */
+.article-preview {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* hidden class used by filter script */
+.hidden {
+  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+	
 </style>
 
 
@@ -1047,6 +1062,7 @@ document.addEventListener('click', function (event) {
 
 </body>
 </html>
+
 
 
 
