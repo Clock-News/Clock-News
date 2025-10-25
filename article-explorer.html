@@ -700,18 +700,19 @@ body {
   }
 }
 
-/* ===== FIXED visibility handling ===== */
+/* ===== FINAL VISIBILITY FIX ===== */
 .article-preview {
   display: block;
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
   transition: opacity 0.3s ease;
 }
 
+/* hide filtered articles completely */
 .article-preview.hidden {
   display: none !important;
-  visibility: hidden !important;
   opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 	
@@ -1033,6 +1034,13 @@ document.addEventListener('click', function (event) {
     });
   }
 });
+
+	 // Debug: Check if hidden class works
+document.addEventListener('DOMContentLoaded', () => {
+  const articles = document.querySelectorAll('.article-preview');
+  console.log("Articles found:", articles.length);
+});
+
 </script>
 
 
@@ -1063,6 +1071,7 @@ document.addEventListener('click', function (event) {
 
 </body>
 </html>
+
 
 
 
