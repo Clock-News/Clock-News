@@ -886,7 +886,7 @@ body {
   
  <script>
 let selectedCategory = null;
-let selectedSubCategory = []; // ✅ now an array to support multiple selections
+let selectedSubCategory = [];
 
 function toggleDropdown(id) {
   const all = document.querySelectorAll('.dropdown-content');
@@ -897,7 +897,7 @@ function toggleDropdown(id) {
 
 function updateSubCategories(category) {
   selectedCategory = category;
-  selectedSubCategory = []; // ✅ reset array
+  selectedSubCategory = [];
   const container = document.getElementById("subCategoryOptions");
 
   if (category === "world") {
@@ -915,7 +915,7 @@ function updateSubCategories(category) {
     ];
 
     container.innerHTML = `
-      <input type="text" id="countrySearch" placeholder="Search country..." oninput="filterCountries()" style="width: 100%; padding: 6px; border-radius: 4px; border: 1px solid #ccc; margin-bottom: 8px;">
+      <input type="text" id="countrySearch" placeholder="Search country..." oninput="filterCountries()" style="width:100%;padding:6px;border-radius:4px;border:1px solid #ccc;margin-bottom:8px;">
       <div id="countryList"></div>
     `;
 
@@ -937,8 +937,8 @@ function updateSubCategories(category) {
   } else if (category === "science") {
     container.innerHTML = `
       <label><input type="checkbox" name="subCategory" value="ai" onchange="selectSubCategory()"> AI</label><br>
-      <label><input type="checkbox" name="subCategory" value="space" onchange="selectSubCategory()"> Space</label>
-	  <label><input type="checkbox" name="subCategory" value="health" onchange="selectSubCategory()"> Health</label>
+      <label><input type="checkbox" name="subCategory" value="space" onchange="selectSubCategory()"> Space</label><br>
+      <label><input type="checkbox" name="subCategory" value="health" onchange="selectSubCategory()"> Health</label>
     `;
   } else if (category === "sports") {
     container.innerHTML = `
@@ -947,10 +947,9 @@ function updateSubCategories(category) {
     `;
   }
 
-  filterArticles(); // filter by category only at this point
+  filterArticles();
 }
 
-// ✅ Now handles multiple selected subcategories
 function selectSubCategory() {
   const checked = document.querySelectorAll('input[name="subCategory"]:checked');
   selectedSubCategory = Array.from(checked).map(input => input.value);
@@ -972,39 +971,21 @@ function filterArticles() {
 
     let show = true;
 
-    // Category filter
-    if (selectedCategory && cat !== selectedCategory) {
-      show = false;
-    }
+    if (selectedCategory && cat !== selectedCategory) show = false;
+    if (selectedSubCategory.length > 0 && !selectedSubCategory.includes(sub)) show = false;
+    if (fromDate && date < fromDate) show = false;
+    if (toDate && date > toDate) show = false;
+    if (searchText && !fuzzyMatch(searchText, content)) show = false;
 
-    // ✅ Sub-category multi-selection filter
-    if (selectedSubCategory.length > 0 && !selectedSubCategory.includes(sub)) {
-      show = false;
-    }
-
-    if (fromDate && date < fromDate) {
-      show = false;
-    }
-
-    if (toDate && date > toDate) {
-      show = false;
-    }
-
-    if (searchText && !content.includes(searchText)) {
-  show = false;
-}
-
-    if (show) {
-  article.classList.remove('hidden');
-} else {
-  article.classList.add('hidden');
-}
+    article.classList.toggle('hidden', !show);
   });
+}
+
+// ✅ Fuzzy search function (outside now)
 function fuzzyMatch(input, text) {
   const pattern = input.split('').map(char => `.*${char}`).join('');
-  const regex = new RegExp(pattern, 'i'); // 'i' for case-insensitive
+  const regex = new RegExp(pattern, 'i');
   return regex.test(text);
-}
 }
 
 function clearFilters() {
@@ -1027,20 +1008,10 @@ function clearFilters() {
 document.addEventListener('click', function (event) {
   const isDropdownButton = event.target.closest('.category-btn');
   const isInsideDropdown = event.target.closest('.dropdown-content');
-
   if (!isDropdownButton && !isInsideDropdown) {
-    document.querySelectorAll('.dropdown-content').forEach(drop => {
-      drop.style.display = 'none';
-    });
+    document.querySelectorAll('.dropdown-content').forEach(drop => drop.style.display = 'none');
   }
 });
-
-	 // Debug: Check if hidden class works
-document.addEventListener('DOMContentLoaded', () => {
-  const articles = document.querySelectorAll('.article-preview');
-  console.log("Articles found:", articles.length);
-});
-
 </script>
 
 
@@ -1071,6 +1042,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
 
 
